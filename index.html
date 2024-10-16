@@ -1,0 +1,5362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShafinskyiY_Samostiina_2</title>
+</head>
+
+<body>
+    <header>
+        <h1 style="text-align: center;">Самостійна робота №2</h1>
+        <h2 style="text-align: center;">Виконав студент групи ІС-31 Шафінський Ярослав</h2>
+    </header>
+    <main>
+        <h1 style="color: blue;"><i>1.1. CSS Синтаксис </i></h1>
+        <h3>Після тексту зеленого кольору розміщений результат прикладу</h3>
+
+        <h3 style="color: green;">Приклад 1</h3>
+        <div class="styled-div1">
+            <style>
+                .styled-div1 p {
+                    color: red;
+                    text-align: center;
+                }
+            </style>
+            <p>Hello World!</p>
+            <p>Ці параграфи стилізовані за допомогою CSS.</p>
+        </div>
+        <h3 style="color: green;">Приклад 2: CSS Коментарі</h3>
+        <div class="styled-div1">
+            <style>
+                .styled-div1 p {
+                    color: red;
+                    /*Однорядковий коментар*/
+                    text-align: center;
+                }
+
+                /*Багаторядковий
+                коментар*/
+            </style>
+            <p>Hello World!</p>
+            <p>Ці параграфи стилізовані за допомогою CSS.</p>
+            <p>CSS коментарів не відображаються</p>
+        </div>
+        <br>
+
+        <h1 style="color: blue;"><i>1.2. CSS Селектори </i></h1>
+        <h3 style="color: green;">Приклад 1: CSS селектор елемента</h3>
+        <div class="styled-div1">
+            <style>
+                .styled-div1 p {
+                    color: red;
+                    text-align: center;
+                }
+            </style>
+            <p>Кожен параграф буде залежати від стилю.</p>
+            <p id="para1">Я теж!</p>
+            <p>І я!</p>
+        </div>
+        <h3 style="color: green;">Приклад 2: CSS селектор id</h3>
+        <div class="styled-div2">
+            <style>
+                .styled-div2 #para1 {
+                    text-align: center;
+                    color: red;
+                }
+            </style>
+            <p id="para1">Привіт, світ!</p>
+            <p>Цей параграф не залежить від стилю.</p>
+        </div>
+        <h3 style="color: green;">Приклад 3: CSS селектор class</h3>
+        <div class="styled-div3">
+            <style>
+                .styled-div3 {
+                    text-align: center;
+                    color: red;
+                }
+            </style>
+            <h1 class="styled-div3">Червоний заголовок по центру</h1>
+            <p class="styled-div3">Червоний параграф з вирівнюванням по центру.</p>
+        </div>
+        <div class="styled-div4">
+            <style>
+                p.styled-div4 {
+                    text-align: center;
+                    color: red;
+                    font-size: 300%;
+                }
+            </style>
+            <h1 class="styled-div4">Червоний заголовок по центру</h1>
+            <p class="styled-div4">Червоний параграф з вирівнюванням по центру.</p>
+        </div>
+        <h3 style="color: green;">Приклад 4: Універсальний CSS селектор</h3>
+        <div class="styled-div5">
+            <style>
+                .styled-div5 * {
+                    text-align: center;
+                    color: blue;
+                }
+            </style>
+            <h1>Hello world!</h1>
+            <p>Кожен елемент на сторінці буде залежати від стилю.</p>
+            <p id="para1">Я теж!</p>
+            <p>І я!</p>
+        </div>
+        <h3 style="color: green;">Приклад 5: CSS Селектор групування</h3>
+        <div class="styled-div6">
+            <style>
+                .styled-div6 h1,
+                .styled-div6 h2,
+                .styled-div6 p {
+                    text-align: center;
+                    color: red;
+                }
+            </style>
+            <h1>Привіт, світ!</h1>
+            <h2>Менший заголовок!</h2>
+            <p>Це параграф.</p>
+        </div>
+
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Установіть червоний колір для всіх елементів <p>.  -->
+        <div class="styled-div7">
+            <style>
+                .styled-div7 p {
+                    color: red;
+                }
+            </style>
+            <p>Це параграф.</p>
+        </div>
+        <br>
+        <h1 style="color: blue;"><i>1.3. CSS Кольори (RGB, HEX, HSL)</i></h1>
+        <h3 style="color: green;">Приклад 1: CSS Background Color - Колір фону</h3>
+        <h1 style="background-color:DodgerBlue;">Hello World</h1>
+        <p style="background-color:Tomato;">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat.
+            Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+            commodo consequat.
+        </p>
+
+        <h3 style="color: green;">Приклад 2: CSS Text Color - Колір тексту</h3>
+        <h1 style="color:Tomato;">Hello World</h1>
+        <p style="color:DodgerBlue;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+            euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        <p style="color:MediumSeaGreen;">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+            lobortis nisl ut aliquip ex ea commodo consequat.</p>
+        <h3 style="color: green;">Приклад 3: CSS Border Color - Колір межі</h3>
+        <h1 style="border: 2px solid Tomato;">Hello World</h1>
+        <h1 style="border: 2px solid DodgerBlue;">Hello World</h1>
+        <h1 style="border: 2px solid Violet;">Hello World</h1>
+        <h3 style="color: green;">Приклад 4: CSS Значення кольору</h3>
+        <p>Те ж, що й назва кольору "Помідор":</p>
+
+        <h1 style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</h1>
+        <h1 style="background-color:#ff6347;">#ff6347</h1>
+        <h1 style="background-color:hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</h1>
+
+        <p>Те ж, що й назва кольору "Помідор", але на 50% прозоріше:</p>
+        <h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
+        <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h1>
+        <p>Те ж, що й назва кольору "Помідор", але на 50% прозоріше:</p>
+        <h3 style="color: green;">Приклад 5: RGB Значення</h3>
+        <h1 style="background-color:rgb(255, 0, 0);">rgb(255, 0, 0)</h1>
+        <h1 style="background-color:rgb(238, 130, 238);">rgb(238, 130, 238)</h1>
+        <h1 style="background-color:rgb(0, 0, 255);">rgb(0, 0, 255)</h1>
+        <h1 style="background-color:rgb(60, 179, 113);">rgb(60, 179, 113)</h1>
+        <h1 style="background-color:rgb(106, 90, 205);">rgb(106, 90, 205)</h1>
+        <h1 style="background-color:rgb(255, 165, 0);">rgb(255, 165, 0)</h1>
+        <h1 style="background-color:rgb(255, 255, 255);">rgb(255, 255, 255)</h1>
+        <h1 style="background-color:rgb(240, 240, 240);">rgb(240, 240, 240)</h1>
+        <h1 style="background-color:rgb(180, 180, 180);">rgb(180, 180, 180)</h1>
+        <h1 style="background-color:rgb(120, 120, 120);">rgb(120, 120, 120)</h1>
+        <h1 style="background-color:rgb(60, 60, 60);">rgb(60, 60, 60)</h1>
+        <h1 style="background-color:rgb(0, 0, 0); color:white;">rgb(0, 0, 0)</h1>
+        <h3 style="color: green;">Приклад 6: RGBA Значення</h3>
+        <h1 style="background-color:rgba(210, 99, 71, 0);">rgba(10, 99, 71, 0)</h1>
+        <h1 style="background-color:rgba(10, 99, 71, 0.2);">rgba(10, 99, 71, 0.2)</h1>
+        <h1 style="background-color:rgba(10, 99, 71, 0.4);">rgba(10, 99, 71, 0.4)</h1>
+        <h1 style="background-color:rgba(10, 99, 71, 0.6);">rgba(10, 99, 71, 0.6)</h1>
+        <h1 style="background-color:rgba(10, 99, 71, 0.8);">rgba(10, 99, 71, 0.8)</h1>
+        <h1 style="background-color:rgba(10, 99, 71, 1);">rgba(10, 99, 71, 1)</h1>
+        <h3 style="color: green;">Приклад 7: HEX Значення</h3>
+        <h1 style="background-color:#ff0000;">#ff0000</h1>
+        <h1 style="background-color:#c4ce36;">#c4ce36</h1>
+        <h1 style="background-color:#3cb371;">#3cb371</h1>
+        <h1 style="background-color:#ee82ee;">#ee82ee</h1>
+        <h1 style="background-color:#9e7935;">#9e7935</h1>
+        <h1 style="background-color:#6a5acd;">#6a5acd</h1>
+        <h1 style="background-color:#000000; color:white;">#000000</h1>
+        <h1 style="background-color:#3c3c3c;">#3c3c3c</h1>
+        <h1 style="background-color:#787878;">#787878</h1>
+        <h1 style="background-color:#b4b4b4;">#b4b4b4</h1>
+        <h1 style="background-color:#f0f0f0;">#f0f0f0</h1>
+        <h1 style="background-color:#ffffff;">#ffffff</h1>
+        <h3 style="color: green;">Приклад 8: 3-значне шістнадцяткове значення</h3>
+        <div class="styled-div8">
+            <style>
+                .styled-div8 h1 {
+                    color: #f0f;
+                }
+
+                .styled-div8 p {
+                    color: #b58;
+                }
+            </style>
+            <h1>CSS 3-цифровий HEX-код</h1>
+            <p>Це параграф.</p>
+        </div>
+        <h3 style="color: green;">Приклад 9: HSL Значення</h3>
+        <h1 style="background-color:hsl(300, 76%, 72%);">hsl(300, 76%, 72%)</h1>
+        <h1 style="background-color:hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</h1>
+        <h1 style="background-color:hsl(248, 53%, 58%);">hsl(248, 53%, 58%)</h1>
+        <h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+        <h1 style="background-color:hsl(240, 100%, 50%);">hsl(240, 100%, 50%)</h1>
+        <h1 style="background-color:hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</h1>
+        <h1 style="background-color:hsl(0, 0%, 50%);">hsl(0, 0%, 50%)</h1>
+        <h1 style="background-color:hsl(0, 20%, 50%);">hsl(0, 20%, 50%)</h1>
+        <h1 style="background-color:hsl(0, 40%, 50%);">hsl(0, 40%, 50%)</h1>
+        <h1 style="background-color:hsl(0, 60%, 50%);">hsl(0, 60%, 50%)</h1>
+        <h1 style="background-color:hsl(0, 80%, 50%);">hsl(0, 80%, 50%)</h1>
+        <h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+        <h1 style="background-color:hsl(0, 100%, 0%); color:white;">hsl(0, 100%, 0%)</h1>
+        <h1 style="background-color:hsl(0, 100%, 25%);">hsl(0, 100%, 25%)</h1>
+        <h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+        <h1 style="background-color:hsl(0, 100%, 75%);">hsl(0, 100%, 75%)</h1>
+        <h1 style="background-color:hsl(0, 100%, 90%);">hsl(0, 100%, 90%)</h1>
+        <h1 style="background-color:hsl(0, 100%, 100%);">hsl(0, 100%, 100%)</h1>
+        <h1 style="background-color:hsl(0, 0%, 0%); color: white;">hsl(0, 0%, 0%)</h1>
+        <h1 style="background-color:hsl(0, 0%, 24%);">hsl(0, 0%, 24%)</h1>
+        <h1 style="background-color:hsl(0, 0%, 47%);">hsl(0, 0%, 47%)</h1>
+        <h1 style="background-color:hsl(0, 0%, 71%);">hsl(0, 0%, 71%)</h1>
+        <h1 style="background-color:hsl(0, 0%, 94%);">hsl(0, 0%, 94%)</h1>
+        <h1 style="background-color:hsl(0, 0%, 100%);">hsl(0, 0%, 100%)</h1>
+        <h3 style="color: green;">Приклад 10: HSLA значення</h3>
+        <h1 style="background-color:hsla(80, 100%, 64%, 0);">hsla(80, 100%, 64%, 0)</h1>
+        <h1 style="background-color:hsla(80, 100%, 64%, 0.2);">hsla(80, 100%, 64%, 0.2)</h1>
+        <h1 style="background-color:hsla(80, 100%, 64%, 0.4);">hsla(80, 100%, 64%, 0.4)</h1>
+        <h1 style="background-color:hsla(80, 100%, 64%, 0.6);">hsla(80, 100%, 64%, 0.6)</h1>
+        <h1 style="background-color:hsla(80, 100%, 64%, 0.8);">hsla(80, 100%, 64%, 0.8)</h1>
+        <h1 style="background-color:hsla(80, 100%, 64%, 1);">hsla(80, 100%, 64%, 1)</h1>
+        <br>
+        <h1 style="color: blue;"><i>1.4. CSS Фони</i></h1>
+        <h3 style="color: green;">Приклад 1: CSS background-color - Колір фону</h3>
+        <div class="styled-div9">
+            <style>
+                .styled-div9 {
+                    background-color: lightblue;
+                }
+            </style>
+            <h1>Hello World!</h1>
+            <p>Це параграф.</p>
+        </div>
+        <h3 style="color: green;">Приклад 2: Інші елементи</h3>
+        <div class="styled-div10">
+            <style>
+                .styled-div10 h1 {
+                    background-color: green;
+                }
+
+                .styled-div10 {
+                    background-color: lightblue;
+                }
+
+                .styled-div10 p {
+                    background-color: yellow;
+                }
+            </style>
+            <h1>Приклад CSS background-color!</h1>
+            Це текст всередині елемента div.
+            <p>Цей параграф має власний колір фону.</p>
+            Ми все ще знаходимося в елементі div.
+        </div>
+        <h3 style="color: green;">Приклад 3: Opacity / Transparency - Непрозорість / Прозорість</h3>
+        <div class="styled-div11">
+            <style>
+                .styled-div11 div {
+                    background-color: green;
+                }
+
+                .styled-div11 div.first {
+                    opacity: 0.1;
+                }
+
+                .styled-div11 div.second {
+                    opacity: 0.3;
+                }
+
+                .styled-div11 div.third {
+                    opacity: 0.6;
+                }
+            </style>
+            <div class="first">
+                <h1>opacity 0.1</h1>
+            </div>
+
+            <div class="second">
+                <h1>opacity 0.3</h1>
+            </div>
+
+            <div class="third">
+                <h1>opacity 0.6</h1>
+            </div>
+            <div>
+                <h1>opacity 1 (за замовчуванням)</h1>
+            </div>
+        </div>
+        <h3 style="color: green;">Приклад 4: Прозорість з використанням RGBA</h3>
+        <div class="styled-div12">
+            <style>
+                .styled-div12 div {
+                    background: rgb(0, 128, 0);
+                }
+
+                .styled-div12 div.first1 {
+                    background: rgba(0, 128, 0, 0.1);
+                }
+
+                .styled-div12 div.second1 {
+                    background: rgba(0, 128, 0, 0.3);
+                }
+
+                .styled-div12 div.third1 {
+                    background: rgba(0, 128, 0, 0.6);
+                }
+            </style>
+            <p>З opacity:</p>
+
+            <div style="opacity:0.1;">
+                <h1>10% opacity</h1>
+            </div>
+
+            <div style="opacity:0.3;">
+                <h1>30% opacity</h1>
+            </div>
+
+            <div style="opacity:0.6;">
+                <h1>60% opacity</h1>
+            </div>
+
+            <div>
+                <h1>opacity 1</h1>
+            </div>
+            <p>Із значення кольору RGBA:</p>
+            <div class="first1">
+                <h1>10% opacity</h1>
+            </div>
+
+            <div class="second1">
+                <h1>30% opacity</h1>
+            </div>
+
+            <div class="third1">
+                <h1>60% opacity</h1>
+            </div>
+
+            <div>
+                <h1>За замовчуванням</h1>
+            </div>
+        </div>
+        <h3 style="color: green;">Приклад 5: CSS background-image</h3>
+        <div class="styled-div13">
+            <style>
+                .styled-div13 {
+                    background-image: url("https://w3schoolsua.github.io/images/bgdesert.jpg");
+                }
+            </style>
+            <h1>Hello World!</h1>
+            <p>Це параграф.</p>
+        </div>
+        <div class="styled-div14">
+            <style>
+                .styled-div14 {
+                    background-image: url("https://w3schoolsua.github.io/images/paper.gif");
+                }
+            </style>
+            <h1>Hello World!</h1>
+            <p>Це параграф.</p>
+        </div>
+        <p style="background-image: url('https://w3schoolsua.github.io/images/paper.gif');">Це параграф.</p>
+
+        <h3 style="color: green;">Приклад 6: CSS background-repeat</h3>
+        <div class="styled-div15">
+            <style>
+                .styled-div15 {
+                    background-image: url("https://w3schoolsua.github.io/images/gradient_bg.png");
+                }
+            </style>
+            <h1>Hello World!</h1>
+            <p>Дивне зображення...</p>
+            <p>Дивне зображення...</p>
+            <p>Дивне зображення...</p>
+            <p>Дивне зображення...</p>
+            <p>Дивне зображення...</p>
+            <p>Дивне зображення...</p>
+            <p>Дивне зображення...</p>
+            <p>Дивне зображення...</p>
+        </div>
+
+        <div class="styled-div16">
+            <style>
+                .styled-div16 {
+                    background-image: url("https://w3schoolsua.github.io/images/gradient_bg.png");
+                    background-repeat: repeat-x;
+                }
+            </style>
+            <h1>Hello World!</h1>
+            <p>Дивне зображення...</p>
+            <p>Дивне зображення...</p>
+            <p>Дивне зображення...</p>
+            <p>Тут фонове зображення повторюється тільки по горизонталі!</p>
+        </div>
+        <h3 style="color: green;">Приклад 7: CSS background-repeat: no-repeat</h3>
+
+        <div class="styled-div17">
+            <style>
+                .styled-div17 {
+                    background-image: url("https://w3schoolsua.github.io/images/img_tree.png");
+                    background-repeat: no-repeat;
+                }
+            </style>
+            <h1>Hello World!</h1>
+            <p>Дивне зображення...</p>
+            <p>Дивне зображення...</p>
+            <p>Дивне зображення...</p>
+            <p>Зображення не повторюється</p>
+
+        </div>
+        <h3 style="color: green;">Приклад 8: CSS background-position</h3>
+
+        <div class="styled-div18">
+            <style>
+                .styled-div18 {
+                    background-image: url("https://w3schoolsua.github.io/images/img_tree.png");
+                    background-repeat: no-repeat;
+                    background-position: right top;
+                    margin-right: 200px;
+                }
+            </style>
+            <h1>Hello World!</h1>
+            <p>Дивне зображення...</p>
+            <p>Дивне зображення...</p>
+            <p>Дивне зображення...</p>
+            <p>Зображення з правого боку</p>
+
+        </div>
+        <h3 style="color: green;">Приклад 9: CSS background-attachment</h3>
+        <div class="styled-div19">
+            <style>
+                .styled-div19 {
+                    background-image: url('https://w3schoolsua.github.io/images/img_tree.png');
+                    background-repeat: no-repeat;
+                    background-position: right top;
+                    margin-right: 200px;
+                    background-attachment: scroll;
+                }
+            </style>
+            <h1>Hello World!</h1>
+            <p>Дивне зображення...</p>
+            <p>Дивне зображення...</p>
+            <p>Дивне зображення...</p>
+            <p>Дивне зображення...</p>
+            <p>Дивне зображення...</p>
+            <p>Дивне зображення...</p>
+            <p>Дивне зображення...</p>
+            <p>Дивне зображення...</p>
+            <p>Дивне зображення...</p>
+            <p>Дивне зображення...</p>
+            <p>Дивне зображення...</p>
+
+        </div>
+        <h3 style="color: green;">Приклад 10: CSS Background Shorthand - Скорочена властивість</h3>
+        <div class="styled-div20">
+            <style>
+                .styled-div20 {
+                    background: #fff url('https://w3schoolsua.github.io/images/img_tree.png') no-repeat right;
+                }
+            </style>
+            <h1>Hello World!</h1>
+            <p>Дивне зображення...</p>
+            <p>Дивне зображення...</p>
+            <p>Дивне зображення...</p>
+            <p>Дивне зображення...</p>
+            <p>Дивне зображення...</p>
+            <p>Дивне зображення...</p>
+            <p>Дивне зображення...</p>
+            <p>Дивне зображення...</p>
+            <p>Дивне зображення...</p>
+            <p>Дивне зображення...</p>
+            <p>Дивне зображення...</p>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Встановіть колір фону елементу <h1> на "lightblue" (світло-блакитний).  -->
+        <div class="styled-div21">
+            <style>
+                .styled-div21 h1 {
+                    background-color: lightblue;
+                }
+            </style>
+            <h1>This is a heading</h1>
+            <p>This is a paragraph</p>
+            <p>This is a paragraph</p>
+        </div>
+
+        <br>
+        <h1 style="color: blue;"><i>1.5. CSS Межі</i></h1>
+        <h3 style="color: green;">Приклад 1: CSS background-attachment</h3>
+
+        <div class="styled-div22">
+            <style>
+                .styled-div22 p.dotted {
+                    border-style: dotted;
+                }
+
+                .styled-div22 p.dashed {
+                    border-style: dashed;
+                }
+
+                .styled-div22 p.solid {
+                    border-style: solid;
+                }
+
+                .styled-div22 p.double {
+                    border-style: double;
+                }
+
+                .styled-div22 p.groove {
+                    border-style: groove;
+                }
+
+                .styled-div22 p.ridge {
+                    border-style: ridge;
+                }
+
+                .styled-div22 p.inset {
+                    border-style: inset;
+                }
+
+                .styled-div22 p.outset {
+                    border-style: outset;
+                }
+
+                .styled-div22 p.none {
+                    border-style: none;
+                }
+
+                .styled-div22 p.hidden {
+                    border-style: hidden;
+                }
+
+                .styled-div22 p.mix {
+                    border-style: dotted dashed solid double;
+                }
+            </style>
+            <p class="dotted">Точкова межа.</p>
+            <p class="dashed">Пунктирна межа.</p>
+            <p class="solid">Суцільна межа.</p>
+            <p class="double">Подвійна межа.</p>
+            <p class="groove">Гофрована межа.</p>
+            <p class="ridge">Ребриста межа.</p>
+            <p class="inset">Вставна межа.</p>
+            <p class="outset">Опукла межа.</p>
+            <p class="none">Немає межі.</p>
+            <p class="hidden">Прихована межа.</p>
+            <p class="mix">Змішана межа.</p>
+        </div>
+        <h3 style="color: green;">Приклад 2: CSS Border Width - Ширина межі</h3>
+        <div class="styled-div23">
+            <style>
+                .styled-div23 p.one {
+                    border-style: solid;
+                    border-width: 5px;
+                }
+
+                .styled-div23 p.two {
+                    border-style: solid;
+                    border-width: medium;
+                }
+
+                .styled-div23 p.three {
+                    border-style: dotted;
+                    border-width: 2px;
+                }
+
+                .styled-div23 p.four {
+                    border-style: dotted;
+                    border-width: thick;
+                }
+
+                .styled-div23 p.five {
+                    border-style: double;
+                    border-width: 15px;
+                }
+
+                .styled-div23 p.six {
+                    border-style: double;
+                    border-width: thick;
+                }
+            </style>
+            <p class="one">Якийсь текст.</p>
+            <p class="two">Якийсь текст.</p>
+            <p class="three">Якийсь текст.</p>
+            <p class="four">Якийсь текст.</p>
+            <p class="five">Якийсь текст.</p>
+            <p class="six">Якийсь текст.</p>
+        </div>
+        <h3 style="color: green;">Приклад 3: Визначена ширина сторони</h3>
+        <div class="styled-div24">
+            <style>
+                .styled-div24 p.one1 {
+                    border-style: solid;
+                    border-width: 5px 20px;
+                }
+
+                .styled-div24 p.two2 {
+                    border-style: solid;
+                    border-width: 20px 5px;
+                }
+
+                .styled-div24 p.three3 {
+                    border-style: solid;
+                    border-width: 25px 10px 4px 35px;
+                }
+            </style>
+            <p class="one1">Якийсь текст.</p>
+            <p class="two2">Якийсь текст.</p>
+            <p class="three3">Якийсь текст.</p>
+        </div>
+        <h3 style="color: green;">Приклад 4: CSS Колір межі</h3>
+        <div class="styled-div25">
+            <style>
+                .styled-div25 p.one0 {
+                    border-style: solid;
+                    border-color: red;
+                }
+
+                .styled-div25 p.two0 {
+                    border-style: solid;
+                    border-color: green;
+                }
+
+                .styled-div25 p.three0 {
+                    border-style: dotted;
+                    border-color: blue;
+                }
+            </style>
+            <p class="one0">Якийсь текст.</p>
+            <p class="two0">Якийсь текст.</p>
+            <p class="three0">Якийсь текст.</p>
+        </div>
+        <h3 style="color: green;">Приклад 5: Визначені кольори сторін</h3>
+        <div class="styled-div26">
+            <style>
+                .styled-div26 p.one01 {
+                    border-style: solid;
+                    border-color: green red blue yellow;
+                }
+            </style>
+            <p class="one01">Якийсь текст.</p>
+        </div>
+        <h3 style="color: green;">Приклад 6: HEX Значення</h3>
+        <div class="styled-div27">
+            <style>
+                .styled-div27 p.one02 {
+                    border-style: solid;
+                    border-color: #ff0000;
+                }
+
+                .styled-div27 p.two02 {
+                    border-style: solid;
+                    border-color: #0000ff;
+                }
+
+                .styled-div27 p.three02 {
+                    border-style: solid;
+                    border-color: #bbbbbb;
+                }
+            </style>
+            <p class="one02">Якийсь текст.</p>
+            <p class="two02">Якийсь текст.</p>
+            <p class="three02">Якийсь текст.</p>
+        </div>
+        <h3 style="color: green;">Приклад 7: RGB Значення</h3>
+        <div class="styled-div28">
+            <style>
+                .styled-div28 p.one03 {
+                    border-style: solid;
+                    border-color: rgb(255, 0, 0);
+                }
+
+                .styled-div28 p.two03 {
+                    border-style: solid;
+                    border-color: rgb(0, 0, 255);
+                }
+
+                .styled-div28 p.three03 {
+                    border-style: solid;
+                    border-color: rgb(187, 187, 187);
+                }
+            </style>
+            <p class="one03">Якийсь текст.</p>
+            <p class="two03">Якийсь текст.</p>
+            <p class="three03">Якийсь текст.</p>
+        </div>
+        <h3 style="color: green;">Приклад 8: HSL Значення</h3>
+        <div class="styled-div29">
+            <style>
+                .styled-div29 p.one04 {
+                    border-style: solid;
+                    border-color: hsl(0, 100%, 50%);
+                }
+
+                .styled-div29 p.two04 {
+                    border-style: solid;
+                    border-color: hsl(240, 100%, 50%);
+                }
+
+                .styled-div29 p.three04 {
+                    border-style: solid;
+                    border-color: hsl(0, 0%, 73%);
+                }
+            </style>
+            <p class="one04">Якийсь текст.</p>
+            <p class="two04">Якийсь текст.</p>
+            <p class="three04">Якийсь текст.</p>
+        </div>
+        <h3 style="color: green;">Приклад 9: CSS Border - Окремі сторони</h3>
+        <div class="styled-div30">
+            <style>
+                .styled-div30 p {
+                    border-style: dotted solid;
+                }
+            </style>
+            <p class="one04">Якийсь текст.</p>
+        </div>
+        <br><br>
+        <div class="styled-div31">
+            <style>
+                .styled-div31 p.one05 {
+                    border-style: dotted solid double dashed;
+                }
+
+                .styled-div31 p.two05 {
+                    border-style: dotted solid double;
+                }
+
+                .styled-div31 p.three05 {
+                    border-style: dotted solid;
+                }
+
+                .styled-div31 p.four05 {
+                    border-style: dotted;
+                }
+            </style>
+            <p class="one05">Якийсь текст.</p>
+            <p class="two05">Якийсь текст.</p>
+            <p class="three05">Якийсь текст.</p>
+            <p class="four05">Якийсь текст.</p>
+        </div>
+        <h3 style="color: green;">Приклад 10: CSS Border - Скорочена властивість</h3>
+        <div class="styled-div32">
+            <style>
+                .styled-div32 p.one06 {
+                    border: 5px solid blue;
+                }
+
+                .styled-div32 p.two06 {
+                    border-left: 6px solid blue;
+                    background-color: lightgrey;
+                }
+
+                .styled-div32 p.three06 {
+                    border-bottom: 6px solid blue;
+                    background-color: lightgrey;
+                }
+            </style>
+            <p class="one06">Якийсь текст.</p>
+            <p class="two06">Якийсь текст.</p>
+            <p class="three06">Якийсь текст.</p>
+        </div>
+        <h3 style="color: green;">Приклад 11: CSS Закруглені межі</h3>
+        <div class="styled-div33">
+            <style>
+                .styled-div33 p.one07 {
+                    border: 2px solid blue;
+                }
+
+                .styled-div33 p.two07 {
+                    border: 2px solid blue;
+                    border-radius: 5px;
+                }
+
+                .styled-div33 p.three07 {
+                    border: 2px solid blue;
+                    border-radius: 8px;
+                }
+
+                .styled-div33 p.four07 {
+                    border: 2px solid blue;
+                    border-radius: 12px;
+                }
+
+                .styled-div33 p.five07 {
+                    border-style: solid;
+                    border-top: thick double #ff0000;
+                }
+
+                .styled-div33 p.six07 {
+                    border-style: solid;
+                    border-right-color: #ff0000;
+                }
+
+                .styled-div33 p.seven07 {
+                    border-style: solid;
+                    border-left-width: 15px;
+                }
+
+                .styled-div33 p.four07 {
+                    border: 2px solid blue;
+                    border-radius: 12px;
+                }
+
+                .styled-div33 p.four07 {
+                    border: 2px solid blue;
+                    border-radius: 12px;
+                }
+            </style>
+            <p class="one07">Якийсь текст.</p>
+            <p class="two07">Якийсь текст.</p>
+            <p class="three07">Якийсь текст.</p>
+            <p class="four07">Якийсь текст.</p>
+            <p class="five07">Якийсь текст.</p>
+            <p class="six07">Якийсь текст.</p>
+            <p class="seven07">Якийсь текст.</p>
+        </div>
+        <div class="styled-div34">
+            <style>
+                .styled-div34 p.none1 {
+                    border-bottom-style: none;
+                }
+
+                .styled-div34 p.dotted1 {
+                    border-bottom-style: dotted;
+                }
+
+                .styled-div34 p.dashed1 {
+                    border-bottom-style: dashed;
+                }
+
+                .styled-div34 p.solid1 {
+                    border-bottom-style: solid;
+                }
+
+                .styled-div34 p.double1 {
+                    border-bottom-style: double;
+                }
+
+                .styled-div34 p.groove1 {
+                    border-bottom-style: groove;
+                }
+
+                .styled-div34 p.ridge1 {
+                    border-bottom-style: ridge;
+                }
+
+                .styled-div34 p.inset1 {
+                    border-bottom-style: inset;
+                }
+
+                .styled-div34 p.outset1 {
+                    border-bottom-style: outset;
+                }
+
+                .styled-div34 p.one08 {
+                    border-style: solid;
+                    border-color: #0000ff;
+                }
+
+                .styled-div34 p.two08 {
+                    border-style: solid;
+                    border-color: #ff0000 #0000ff;
+                }
+
+                .styled-div34 p.three08 {
+                    border-style: solid;
+                    border-color: #ff0000 #00ff00 #0000ff;
+                }
+
+                .styled-div34 p.four08 {
+                    border-style: solid;
+                    border-color: #ff0000 #00ff00 #0000ff rgb(250, 0, 255);
+                }
+            </style>
+            <p class="none1">Без нижньої межі.</p>
+            <p class="dotted1">Точкова нижня межа.</p>
+            <p class="dashed1">Пунктирна нижня межа.</p>
+            <p class="solid1">Суцільна нижня межа.</p>
+            <p class="double1">Подвійна нижня межа.</p>
+            <p class="groove1">Гофрована нижня межа.</p>
+            <p class="ridge1">Ребриста нижня межа.</p>
+            <p class="inset1">Внутрішня нижня межа.</p>
+            <p class="outset1">Зовнішня нижня межа.</p>
+            <p class="one08">Однокольорова межа!</p>
+            <p class="two08">Двокольорова межа!</p>
+            <p class="three08">Трикольорова межа!</p>
+            <p class="four08">Чотирикольорова межа!</p>
+
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Use the border shorthand property to set a "4px", "dotted", "red" border for the <p> elements.  -->
+        <div class="styled-div35">
+            <style>
+                .styled-div35 p {
+                    border: 4px dotted red;
+                }
+            </style>
+            <h1>This is a heading</h1>
+            <p>This is a paragraph</p>
+            <p>This is a paragraph</p>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Use the correct border property to set the border color to "red". -->
+        <div class="styled-div36">
+            <style>
+                .styled-div36 p {
+                    border-style: dotted;
+                    border-width: 4px;
+                    border-color: red;
+                }
+            </style>
+            <h1>This is a heading</h1>
+            <p>This is a paragraph</p>
+            <p>This is a paragraph</p>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Use the correct border property to set the LEFT border to "dotted". -->
+        <div class="styled-div37">
+            <style>
+                .styled-div37 p {
+                    border-left-style: dotted;
+                }
+            </style>
+            <h1>This is a heading</h1>
+            <p>This is a paragraph</p>
+            <p>This is a paragraph</p>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Use the correct border property to add ROUNDED borders to the <p> elements. -->
+        <div class="styled-div38">
+            <style>
+                .styled-div38 p {
+                    border: 2px solid red;
+                    border-radius: 5px;
+                }
+            </style>
+            <h1>This is a heading</h1>
+            <p>This is a paragraph</p>
+            <p>This is a paragraph</p>
+        </div>
+        <br>
+        <h1 style="color: blue;"><i>1.6. CSS Поля</i></h1>
+        <h3 style="color: green;">Приклад 1: CSS Поля</h3>
+        <div class="styled-div39">
+            <style>
+                .styled-div39 {
+                    margin: 70px;
+                    border: 1px solid #4CAF50;
+                }
+            </style>
+            <p>This is a paragraph</p>
+        </div>
+        <h3 style="color: green;">Приклад 2: Margin - Окремі сторони</h3>
+        <div class="styled-div40">
+            <style>
+                .styled-div40 {
+                    border: 1px solid black;
+                    margin-top: 100px;
+                    margin-bottom: 100px;
+                    margin-right: 150px;
+                    margin-left: 80px;
+                    background-color: lightblue;
+                }
+            </style>
+            <p>Цей елемент div має верхнє поле 100px, праве поле 150px, нижнє поле 100px і ліве поле 80px.</p>
+        </div>
+        <h3 style="color: green;">Приклад 3: Margin - Скорочена властивість</h3>
+        <div class="styled-div41">
+            <style>
+                .styled-div41 {
+                    border: 1px solid black;
+                    margin: 25px 50px 75px 100px;
+                    background-color: lightblue;
+                }
+            </style>
+            <p>This is a paragraph</p>
+        </div>
+        <h3 style="color: green;">Приклад 4: Значення auto</h3>
+        <div class="styled-div42">
+            <style>
+                .styled-div42 {
+                    width: 300px;
+                    margin: auto;
+                    border: 1px solid red;
+                }
+            </style>
+            <p>This is a paragraph</p>
+        </div>
+        <h3 style="color: green;">Приклад 5: Значення inherit</h3>
+        <div class="styled-div43">
+            <style>
+                .styled-div43 {
+                    border: 1px solid red;
+                    margin-left: 100px;
+                }
+
+                .styled-div43 p.ex1 {
+                    margin-left: inherit;
+                }
+            </style>
+            <p class="ex1">This is a paragraph</p>
+        </div>
+        <h3 style="color: green;">Приклад 6: Margin Collapse - Згортання полів</h3>
+        <div class="styled-div44">
+            <style>
+                .styled-div44 h1 {
+                    margin: 0 0 50px 0;
+                }
+
+                .styled-div44 h2 {
+                    margin: 20px 0 0 0;
+                }
+            </style>
+            <h1>Заголовок 1</h1>
+            <h2>Заголовок 2</h2>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Add a 20 pixels left margin to the <h1> element. -->
+        <div class="styled-div45">
+            <style>
+                .styled-div45 h1 {
+                    margin-left: 20px;
+                }
+            </style>
+            <h1>This is a heading</h1>
+            <p>This is a paragraph</p>
+            <p>This is a paragraph</p>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Use the shorthand margin property to add 20 pixels top and bottom margins, and 40 pixels left and right margins, on the <h1> element. -->
+        <div class="styled-div46">
+            <style>
+                .styled-div46 h1 {
+                    margin: 20px 40px;
+                }
+            </style>
+            <h1>This is a heading</h1>
+            <p>This is a paragraph</p>
+            <p>This is a paragraph</p>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- For the <h1> element, use the shorthand margin property to add these margins:
+        left: 10px
+        right: 15px
+        top: 20px
+        bottom: 25px -->
+        <div class="styled-div47">
+            <style>
+                .styled-div47 h1 {
+                    margin: 20px 15px 25px 10px;
+                }
+            </style>
+            <h1>This is a heading</h1>
+            <p>This is a paragraph</p>
+            <p>This is a paragraph</p>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Use the margin property to center align the <h1> element. -->
+        <div class="styled-div48">
+            <style>
+                .styled-div48 h1 {
+                    margin: auto;
+                }
+            </style>
+            <h1>This is a heading</h1>
+            <p>This is a paragraph</p>
+            <p>This is a paragraph</p>
+        </div>
+        <br>
+        <h1 style="color: blue;"><i>1.7. CSS Padding - Внутрішній відступ</i></h1>
+        <h3 style="color: green;">Приклад 1: CSS Padding - Внутрішній відступ</h3>
+        <div class="styled-div49">
+            <style>
+                .styled-div49 {
+                    padding: 70px;
+                    border: 1px solid #4CAF50;
+                }
+            </style>
+            <p>Цей елемент має відступ 70px.</p>
+        </div>
+        <h3 style="color: green;">Приклад 2: Padding - Окремі сторони</h3>
+        <div class="styled-div50">
+            <style>
+                .styled-div50 {
+                    border: 1px solid black;
+                    background-color: lightblue;
+                    padding-top: 50px;
+                    padding-right: 30px;
+                    padding-bottom: 50px;
+                    padding-left: 80px;
+                }
+            </style>
+            <p>Цей елемент div має верхній відступ 50 пікселів, правий відступ 30 пікселів, нижній відступ 50 пікселів і
+                лівий відступ 80 пікселів.
+            </p>
+        </div>
+        <h3 style="color: green;">Приклад 3: Padding - Скорочена властивість</h3>
+        <div class="styled-div51">
+            <style>
+                .styled-div51 {
+                    border: 1px solid black;
+                    padding: 25px 50px 75px 100px;
+                    background-color: lightblue;
+                }
+            </style>
+            <p>This is a paragraph</p>
+        </div>
+        <div class="styled-div52">
+            <style>
+                .styled-div52 {
+                    border: 1px solid black;
+                    padding: 25px 50px 75px;
+                    background-color: lightblue;
+                }
+            </style>
+            <p>This is a paragraph</p>
+        </div>
+        <div class="styled-div53">
+            <style>
+                .styled-div53 {
+                    border: 1px solid black;
+                    padding: 25px 50px;
+                    background-color: lightblue;
+                }
+            </style>
+            <p>This is a paragraph</p>
+        </div>
+        <div class="styled-div54">
+            <style>
+                .styled-div54 {
+                    border: 1px solid black;
+                    padding: 25px;
+                    background-color: lightblue;
+                }
+            </style>
+            <p>This is a paragraph</p>
+        </div>
+        <h3 style="color: green;">Приклад 4: Padding та Width</h3>
+        <div class="styled-div55">
+            <style>
+                .styled-div55 {
+                    width: 300px;
+                    padding: 25px;
+                    background-color: lightblue;
+                }
+            </style>
+            <p>Ширина цього div становить 350 пікселів, хоча в CSS він визначений як 300 пікселів.</p>
+
+        </div>
+        <br>
+        <div class="styled-div56">
+            <style>
+                .styled-div56 {
+                    width: 300px;
+                    padding: 25px;
+                    box-sizing: border-box;
+                    background-color: lightblue;
+                }
+            </style>
+            <p>Ширина цього div залишається рівною 300 пікселів, незважаючи на 50 пікселів загального лівого і правого
+                відступу, через властивість box-sizing: border-box.</p>
+
+        </div>
+        <h3 style="color: green;">Приклади</h3>
+        <div class="styled-div57">
+            <style>
+                .styled-div57 p.padding {
+                    padding-left: 2cm;
+                }
+
+                .styled-div57 p.padding1 {
+                    padding-left: 50%;
+                }
+            </style>
+            <p class="padding">Цей текст має відступ зліва 2 см.</p>
+            <p class="padding1">Цей текст має відступ зліва 50%.</p>
+        </div>
+        <div class="styled-div58">
+            <style>
+                .styled-div58 p.padding0 {
+                    padding-right: 2cm;
+                }
+
+                .styled-div58 p.padding01 {
+                    padding-right: 50%;
+                }
+            </style>
+            <p class="padding0">Цей текст має відступ справа 2 см. Цей текст має відступ справа 2 см. Цей текст має
+                відступ справа 2 см.</p>
+            <p class="padding01">Цей текст має відступ справа 50%. Цей текст має відступ справа 50%. Цей текст має
+                відступ справа 50%.</p>
+        </div>
+        <div class="styled-div59">
+            <style>
+                .styled-div59 p.padding00 {
+                    padding-top: 2cm;
+                }
+
+                .styled-div59 p.padding001 {
+                    padding-top: 50%;
+                }
+            </style>
+            <p class="padding00">This is a paragraph.</p>
+            <p class="padding001">This is a paragraph.</p>
+        </div>
+        <div class="styled-div60">
+            <style>
+                .styled-div60 p.padding000 {
+                    padding-top: 2cm;
+                }
+
+                .styled-div60 p.padding0001 {
+                    padding-top: 50%;
+                }
+            </style>
+            <p class="padding000">This is a paragraph.</p>
+            <p class="padding0001">This is a paragraph.</p>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Set the top padding of the <h1> element to 30 pixels. -->
+        <div class="styled-div61">
+            <style>
+                .styled-div61 h1 {
+                    padding-top: 30px;
+                }
+            </style>
+            <h1>This is a heading</h1>
+            <p>This is a paragraph</p>
+            <p>This is a paragraph</p>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Set the padding of all sides of the <h1> element to 30 pixels. -->
+        <div class="styled-div62">
+            <style>
+                .styled-div62 h1 {
+                    padding: 30px;
+                }
+            </style>
+            <h1>This is a heading</h1>
+            <p>This is a paragraph</p>
+            <p>This is a paragraph</p>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Use the shorthand padding property to add 10 pixels left and right padding, and 40 pixels top and bottom padding, on the <h1> element. -->
+        <div class="styled-div63">
+            <style>
+                .styled-div63 h1 {
+                    padding: 40px 10px;
+                }
+            </style>
+            <h1>This is a heading</h1>
+            <p>This is a paragraph</p>
+            <p>This is a paragraph</p>
+        </div>
+        <br>
+        <h1 style="color: blue;"><i>1.8. CSS Висота, ширина і максимальна ширина</i></h1>
+        <h3 style="color: green;">Приклад 1: CSS Значення height/width</h3>
+        <div class="styled-div64">
+            <style>
+                .styled-div64 {
+                    height: 200px;
+                    width: 50%;
+                    background-color: powderblue;
+                }
+            </style>
+            <h1>This is a heading</h1>
+            <p>Цей елемент div має висоту 200 пікселів і ширину 50%.</p>
+        </div>
+        <br>
+        <div class="styled-div65">
+            <style>
+                .styled-div65 {
+                    height: 100px;
+                    width: 500px;
+                    background-color: powderblue;
+                }
+            </style>
+            <h1>This is a heading</h1>
+            <p>Цей елемент має висоту 100 пікселів і ширину 500 пікселів. </p>
+        </div>
+        <h3 style="color: green;">Приклад 2: Встановлення максимальної ширини - max-width</h3>
+        <div class="styled-div66">
+            <style>
+                .styled-div66 {
+                    max-width: 500px;
+                    height: 100px;
+                    background-color: powderblue;
+                }
+            </style>
+            <h1>This is a heading</h1>
+            <p>Цей елемент має висоту 100 пікселів і max ширину 500 пікселів. </p>
+        </div>
+        <br><br>
+        <div class="styled-div67">
+            <style>
+                .styled-div67 img.one {
+                    height: auto;
+                }
+
+                .styled-div67 img.two {
+                    height: 200px;
+                    width: 200px;
+                }
+
+                .styled-div67 div.three {
+                    height: 300px;
+                    width: 300px;
+                    background-color: powderblue;
+                }
+            </style>
+            <p>Оригінальне зображення:</p>
+            <img class="one" src="https://w3schoolsua.github.io/images/ocean.jpg" width="300" height="300"><br>
+
+            <p>Розмір зображення (200x200 пікселів):</p>
+            <img class="two" src="https://w3schoolsua.github.io/images/ocean.jpg" width="300" height="300"><br>
+
+            <p>Висота і ширина цього елемента div рівні 300px:</p>
+            <div class="three"></div>
+        </div>
+        <br><br>
+        <div class="styled-div68">
+            <style>
+                .styled-div68 img.one1 {
+                    height: auto;
+                    width: auto;
+                }
+
+                .styled-div68 img.two1 {
+                    height: 50%;
+                    width: 50%;
+                }
+            </style>
+            <p>Змініть розмір вікна браузера, щоб побачити ефект.</p>
+
+            <p>Оригінальне зображення:</p>
+            <img class="one1" src="https://w3schoolsua.github.io/images/ocean.jpg" width="300" height="300"><br>
+
+            <p>Розмір зображення (у %):</p>
+            <img class="two1" src="https://w3schoolsua.github.io/images/ocean.jpg" width="300" height="300">
+
+        </div>
+        <br><br>
+        <div class="styled-div69">
+            <style>
+                .styled-div69 div {
+                    max-width: 400px;
+                    min-width: 100px;
+                    background-color: powderblue;
+                }
+            </style>
+            <div>Text text text.Text text text.Text text text.Text text text.
+                Text text text.Text text text.Text text text.Text text text.
+                Text text text.Text text text.Text text text.Text text text.
+            </div>
+        </div>
+        <br><br>
+        <div class="styled-div70">
+            <style>
+                .styled-div70 div {
+                    max-height: 600px;
+                    min-height: 400px;
+                    background-color: powderblue;
+                }
+            </style>
+            <div>Text text text.Text text text.Text text text.Text text text.
+                Text text text.Text text text.Text text text.Text text text.
+                Text text text.Text text text.Text text text.Text text text.
+            </div>
+        </div>
+
+        <br><br>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Set the height of the <h1> element to "100px". -->
+        <div class="styled-div71">
+            <style>
+                .styled-div71 h1 {
+                    height: 100px;
+                }
+            </style>
+            <h1>This is a heading</h1>
+            <p>This is a paragraph</p>
+            <p>This is a paragraph</p>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Set the width of the <h1> element to "50%". -->
+        <div class="styled-div72">
+            <style>
+                .styled-div72 h1 {
+                    width: 50%;
+                }
+            </style>
+            <h1>This is a heading</h1>
+            <p>This is a paragraph</p>
+            <p>This is a paragraph</p>
+        </div>
+        <br>
+        <h1 style="color: blue;"><i>1.9. CSS Блочна модель</i></h1>
+        <h3 style="color: green;">Приклад 1: CSS Блочна модель</h3>
+        <div class="styled-div73">
+            <style>
+                .styled-div73 div {
+                    background-color: lightgrey;
+                    width: 300px;
+                    border: 15px solid green;
+                    padding: 50px;
+                    margin: 20px;
+                }
+            </style>
+            <div>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                id est laborum.</div>
+        </div>
+        <h3 style="color: green;">Приклад 2: Ширина і висота елемента</h3>
+        <div class="styled-div74">
+            <style>
+                .styled-div74 div {
+                    width: 320px;
+                    padding: 10px;
+                    border: 5px solid gray;
+                    margin: 0;
+                }
+            </style>
+            <img src=" https://w3schoolsua.github.io/images/klematis4_big.jpg" width="350" height="263" alt="Klematis">
+            <div>Зображення вище має ширину 350 пікселів. Загальна ширина цього елемента також 350 пікселів.</div>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Set the width of the <div> element to "200px". -->
+        <div class="styled-div75">
+            <style>
+                .styled-div75 div {
+                    width: 200px;
+                }
+            </style>
+            <div>
+                Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua.
+            </div>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Add a 2px solid red border to the <div> element. -->
+        <div class="styled-div76">
+            <style>
+                .styled-div76 div {
+                    width: 200px;
+                    border: 2px solid red;
+                }
+            </style>
+            <div>
+                Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua.
+            </div>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Add 25 pixels space between the <div> element's border and its content. -->
+        <div class="styled-div77">
+            <style>
+                .styled-div77 div {
+                    width: 200px;
+                    border: 2px solid red;
+                    padding: 25px;
+                }
+            </style>
+            <div>
+                Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua.
+            </div>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Add a 25 pixels space outside, to the left of the <div> element. -->
+        <div class="styled-div78">
+            <style>
+                .styled-div78 div {
+                    width: 200px;
+                    border: 2px solid red;
+                    padding: 25px;
+                    margin-left: 25px;
+                }
+            </style>
+            <div>
+                Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua.
+            </div>
+        </div>
+        <br>
+        <h1 style="color: blue;"><i>1.10. CSS Іконки</i></h1>
+        <iframe src="./css_icons.html" style="width: 400px; height:250px;"></iframe>
+        <br>
+        <h1 style="color: blue;"><i>1.11. CSS Посилання</i></h1>
+        <h3 style="color: green;">Приклад 1: Стилізація посилань</h3>
+        <div class="styled-div79">
+            <style>
+                .styled-div79 a {
+                    color: hotpink;
+                }
+            </style>
+            <p><b><a href="https://w3schoolsua.github.io/css/css_link.html#gsc.tab=0"
+                        target="_blank">w3schools.ua</a></b></p>
+        </div>
+        <br>
+        <div class="styled-div80">
+            <style>
+                .styled-div80 a:link {
+                    color: red;
+                }
+
+                .styled-div80 a:visited {
+                    color: green;
+                }
+
+                .styled-div80 a:hover {
+                    color: hotpink;
+                }
+
+                .styled-div80 a:active {
+                    color: blue;
+                }
+            </style>
+            <p><b><a href="https://w3schoolsua.github.io/css/css_link.html#gsc.tab=0"
+                        target="_blank">w3schools.ua</a></b></p>
+        </div>
+        <h3 style="color: green;">Приклад 2: Text Decoration - Оформлення тексту</h3>
+        <div class="styled-div81">
+            <style>
+                .styled-div81 a:link {
+                    text-decoration: none;
+                }
+
+                .styled-div81 a:visited {
+                    text-decoration: none;
+                }
+
+                .styled-div81 a:hover {
+                    text-decoration: underline;
+                }
+
+                .styled-div81 a:active {
+                    text-decoration: underline;
+                }
+            </style>
+            <p><b><a href="https://w3schoolsua.github.io/css/css_link.html#gsc.tab=0"
+                        target="_blank">w3schools.ua</a></b></p>
+        </div>
+        <h3 style="color: green;">Приклад 3: Background Color - Колір фону</h3>
+        <div class="styled-div82">
+            <style>
+                .styled-div82 a:link {
+                    background-color: yellow;
+                }
+
+                .styled-div82 a:visited {
+                    background-color: cyan;
+                }
+
+                .styled-div82 a:hover {
+                    background-color: lightgreen;
+                }
+
+                .styled-div82 a:active {
+                    background-color: hotpink;
+                }
+            </style>
+            <p><b><a href="https://w3schoolsua.github.io/css/css_link.html#gsc.tab=0"
+                        target="_blank">w3schools.ua</a></b></p>
+        </div>
+        <h3 style="color: green;">Приклад 4: Кнопки-посилання</h3>
+        <div class="styled-div83">
+            <style>
+                .styled-div83 a:link,
+                .styled-div83 a:visited {
+                    background-color: #1100ff;
+                    color: white;
+                    padding: 14px 25px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                }
+
+                .styled-div83 a:hover,
+                .styled-div83 a:active {
+                    background-color: rgb(57, 59, 196);
+                }
+            </style>
+            <p><b><a href="https://w3schoolsua.github.io/css/css_link.html#gsc.tab=0"
+                        target="_blank">w3schools.ua</a></b></p>
+        </div>
+        <h3 style="color: green;">Приклад 5</h3>
+        <div class="styled-div84">
+            <style>
+                .styled-div84 a.one_1:link {
+                    color: #ff0000;
+                }
+
+                .styled-div84 a.one_1:visited {
+                    color: #0000ff;
+                }
+
+                .styled-div84 a.one_1:hover {
+                    color: #ffcc00;
+                }
+
+                .styled-div84 a.two_2:link {
+                    color: #ff0000;
+                }
+
+                .styled-div84 a.two_2:visited {
+                    color: #0000ff;
+                }
+
+                .styled-div84 a.two_2:hover {
+                    font-size: 150%;
+                }
+
+                .styled-div84 a.three_3:link {
+                    color: #ff0000;
+                }
+
+                .styled-div84 a.three_3:visited {
+                    color: #0000ff;
+                }
+
+                .styled-div84 a.three_3:hover {
+                    background: #66ff66;
+                }
+
+                .styled-div84 a.four_4:link {
+                    color: #ff0000;
+                }
+
+                .styled-div84 a.four_4:visited {
+                    color: #0000ff;
+                }
+
+                .styled-div84 a.four_4:hover {
+                    font-family: monospace;
+                }
+
+                .styled-div84 a.five_5:link {
+                    color: #ff0000;
+                    text-decoration: none;
+                }
+
+                .styled-div84 a.five_5:visited {
+                    color: #0000ff;
+                    text-decoration: none;
+                }
+
+                .styled-div84 a.five_5:hover {
+                    text-decoration: underline;
+                }
+            </style>
+            <p><b><a class="one_1" href="https://w3schoolsua.github.io/css/css_link.html#gsc.tab=0" target="_blank">Це
+                        посилання змінює колір</a></b></p>
+            <p><b><a class="two_2" href="https://w3schoolsua.github.io/css/css_link.html#gsc.tab=0" target="_blank">Це
+                        посилання змінює розмір шрифту</a></b></p>
+            <p><b><a class="three_3" href="https://w3schoolsua.github.io/css/css_link.html#gsc.tab=0" target="_blank">Це
+                        посилання змінює колір фону</a></b></p>
+            <p><b><a class="four_4" href="https://w3schoolsua.github.io/css/css_link.html#gsc.tab=0" target="_blank">Це
+                        посилання змінює сімейство шрифтів</a></b></p>
+            <p><b><a class="five_5" href="https://w3schoolsua.github.io/css/css_link.html#gsc.tab=0" target="_blank">Це
+                        посилання змінює оформлення тексту</a></b></p>
+        </div>
+        <span style="cursor: auto">auto</span><br>
+        <span style="cursor: crosshair">crosshair</span><br>
+        <span style="cursor: default">default</span><br>
+        <span style="cursor: e-resize">e-resize</span><br>
+        <span style="cursor: help">help</span><br>
+        <span style="cursor: move">move</span><br>
+        <span style="cursor: n-resize">n-resize</span><br>
+        <span style="cursor: ne-resize">ne-resize</span><br>
+        <span style="cursor: nw-resize">nw-resize</span><br>
+        <span style="cursor: pointer">pointer</span><br>
+        <span style="cursor: progress">progress</span><br>
+        <span style="cursor: s-resize">s-resize</span><br>
+        <span style="cursor: se-resize">se-resize</span><br>
+        <span style="cursor: sw-resize">sw-resize</span><br>
+        <span style="cursor: text">text</span><br>
+        <span style="cursor: w-resize">w-resize</span><br>
+        <span style="cursor: wait">wait</span>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Set the color of links to "red". -->
+        <div class="styled-div85">
+            <style>
+                .styled-div85 a {
+                    color: red;
+                }
+            </style>
+            <h1>This is a heading</h1>
+            <p>This is a paragraph</p>
+            <a href="http://w3schools.com" target="_blank">This is a link</a>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Set the style when you mouse over a link (hover) to red. -->
+        <div class="styled-div86">
+            <style>
+                .styled-div86 a:hover {
+                    color: red;
+                }
+            </style>
+            <h1>This is a heading</h1>
+            <p>This is a paragraph</p>
+            <a href="http://w3schools.com" target="_blank">This is a link</a>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Set the style for links to pages you have visited to red.-->
+        <div class="styled-div87">
+            <style>
+                .styled-div87 a:visited {
+                    color: red;
+                }
+            </style>
+            <h1>This is a heading</h1>
+            <p>This is a paragraph</p>
+            <a href="http://w3schools.com" target="_blank">This is a link</a>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Remove the default underline style for links, but add a underline when you mouse over a link (hover). -->
+        <div class="styled-div88">
+            <style>
+                /* unvisited link */
+                .styled-div88 a:link {
+                    text-decoration: none;
+                }
+
+                /* visited link */
+                .styled-div88 a:visited {
+                    text-decoration: none;
+                }
+
+                /* mouse over link */
+                .styled-div88 a:hover {
+                    text-decoration: underline;
+                }
+            </style>
+            <h1>This is a heading</h1>
+            <p>This is a paragraph</p>
+            <a href="http://w3schools.com" target="_blank">This is a link</a>
+        </div>
+        <br>
+        <h1 style="color: blue;"><i>1.12. CSS Списки</i></h1>
+        <h3 style="color: green;">Приклад 1: Різні маркери списку</h3>
+        <div class="styled-div89">
+            <style>
+                .styled-div89 ul.a {
+                    list-style-type: circle;
+                }
+
+                .styled-div89 ul.b {
+                    list-style-type: square;
+                }
+
+                .styled-div89 ol.c {
+                    list-style-type: upper-roman;
+                }
+
+                .styled-div89 ol.d {
+                    list-style-type: lower-alpha;
+                }
+            </style>
+            <h2>Списки</h2>
+            <p>Unsorted:</p>
+            <ul class="a">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Coca Cola</li>
+            </ul>
+
+            <ul class="b">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Coca Cola</li>
+            </ul>
+
+            <p>Sorted:</p>
+            <ol class="c">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Coca Cola</li>
+            </ol>
+
+            <ol class="d">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Coca Cola</li>
+            </ol>
+        </div>
+        <h3 style="color: green;">Приклад 2: Зображення як маркер елемента списку</h3>
+        <div class="styled-div90">
+            <style>
+                .styled-div90 ul.a1 {
+                    list-style-type: none;
+                    /* Сховати стандартні маркери */
+                    padding-left: 0;
+                    /* Сховати відступ */
+                }
+
+                .styled-div90 ul.a1 li {
+                    background-image: url('https://64.media.tumblr.com/c3b3cd6883925960057b43c187c70377/88a661889eb1d588-a4/s500x750/04ee5a55911284caf626c9eb26013621ef4195ea.gif');
+                    background-size: 20px 20px;
+                    background-repeat: no-repeat;
+                    background-position: 0 0px;
+                    padding-left: 30px;
+                }
+            </style>
+            <ul class="a1">
+                <li>Coffee</li><br>
+                <li>Tea</li><br>
+                <li>Coca Cola</li><br>
+            </ul>
+        </div>
+        <h3 style="color: green;">Приклад 3: Розташуйте маркери елементів списку</h3>
+        <div class="styled-div91">
+            <style>
+                .styled-div91 ul.a2 {
+                    list-style-position: outside;
+                }
+
+                .styled-div91 ul.b2 {
+                    list-style-position: inside;
+                }
+            </style>
+            <h2>list-style-position: outside (за замовчуванням):</h2>
+            <ul class="a2">
+                <li>Кава - заварений напій, приготований з обсмажених кавових зерен, які є насінням ягід рослини Coffea.
+                </li>
+                <li>Чай - ароматний напій, який зазвичай готують шляхом заливання гарячої або киплячої води висушеними
+                    листям Camellia sinensis, вічнозеленого чагарнику (куста), що росте в Азії.</li>
+                <li>Coca Cola - газований безалкогольний напій, що виробляється компанією The Coca-Cola Company. Назва
+                    напою пов'язана з двома його вихідними інгредієнтами: горіхами кола (джерелом кофеїну) та листям
+                    коки.</li>
+            </ul>
+
+            <h2>list-style-position: inside:</h2>
+            <ul class="b2">
+                <li>Кава - заварений напій, приготований з обсмажених кавових зерен, які є насінням ягід рослини Coffea.
+                </li>
+                <li>Чай - ароматний напій, який зазвичай готують шляхом заливання гарячої або киплячої води висушеними
+                    листям Camellia sinensis, вічнозеленого чагарнику (куста), що росте в Азії.</li>
+                <li>Coca Cola - газований безалкогольний напій, що виробляється компанією The Coca-Cola Company. Назва
+                    напою пов'язана з двома його вихідними інгредієнтами: горіхами кола (джерелом кофеїну) та листям
+                    коки.</li>
+            </ul>
+        </div>
+        <h3 style="color: green;">Приклад 4: Видалити налаштування за замовчуванням</h3>
+        <div class="styled-div92">
+            <style>
+                .styled-div92 ul.demo {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                }
+            </style>
+            <p>Список за замовчуванням:</p>
+            <ul>
+                <li>Кава</li>
+                <li>Чай</li>
+                <li>Coca Cola</li>
+            </ul>
+
+            <p>Видалені маркери, поля та відступи:</p>
+            <ul class="demo">
+                <li>Кава</li>
+                <li>Чай</li>
+                <li>Coca Cola</li>
+            </ul>
+        </div>
+        <h3 style="color: green;">Приклад 5: Список - Скорочена властивість</h3>
+        <div class="styled-div93">
+            <style>
+                .styled-div93 ul {
+                    list-style: square inside url("sqpurple.gif");
+                }
+            </style>
+            <ul>
+                <li>Кава</li>
+                <li>Чай</li>
+                <li>Coca Cola</li>
+            </ul>
+        </div>
+        <h3 style="color: green;">Приклад 6: Список стилів з кольорами</h3>
+        <div class="styled-div94">
+            <style>
+                .styled-div94 ol {
+                    background: #ff9999;
+                    padding: 20px;
+                }
+
+                .styled-div94 ul {
+                    background: #3399ff;
+                    padding: 20px;
+                }
+
+                .styled-div94 ol li {
+                    background: #ffe5e5;
+                    padding: 5px;
+                    margin-left: 35px;
+                }
+
+                .styled-div94 ul li {
+                    background: #cce5ff;
+                    margin: 5px;
+                }
+            </style>
+            <ol>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Coca Cola</li>
+            </ol>
+
+            <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Coca Cola</li>
+            </ul>
+        </div>
+        <h3 style="color: green;">Приклад 7</h3>
+        <div class="styled-div95">
+            <style>
+                .styled-div95 ul {
+                    border-left: 5px solid rgb(153, 0, 255);
+                    background-color: #f1f1f1;
+                    list-style-type: none;
+                    padding: 10px 20px;
+                }
+            </style>
+
+            <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Coca Cola</li>
+            </ul>
+        </div>
+        <div class="styled-div96">
+            <style>
+                .styled-div96 ul {
+                    list-style-type: none;
+                    padding: 0;
+                    border: 1px solid #ddd;
+                }
+
+                .styled-div96 ul li {
+                    padding: 8px 16px;
+                    border-bottom: 1px solid #ddd;
+                }
+
+                .styled-div96 ul li:last-child {
+                    border-bottom: none
+                }
+            </style>
+
+            <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Coca Cola</li>
+            </ul>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Set the list style for unordered lists to "square". -->
+        <div class="styled-div97">
+            <style>
+                .styled-div97 ul {
+                    list-style-type: square;
+                }
+            </style>
+            <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Coca Cola</li>
+            </ul>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Change the list's item marker to an image called 'bling.jpg': -->
+        <div class="styled-div98">
+            <style>
+                .styled-div98 ul {
+                    list-style-image: url("bling.jpg");
+                }
+            </style>
+            <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Coca Cola</li>
+            </ul>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Remove the bullets/markers from the list items. -->
+        <div class="styled-div99">
+            <style>
+                .styled-div99 ul {
+                    list-style-type: none;
+                }
+            </style>
+            <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Coca Cola</li>
+            </ul>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Remove the bullets/markers from the list items. -->
+        <div class="styled-div100">
+            <style>
+                .styled-div100 ol {
+                    list-style-type: upper-roman;
+                }
+            </style>
+            <ol>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Coca Cola</li>
+            </ol>
+        </div>
+        <br>
+        <h1 style="color: blue;"><i>1.13. CSS Таблиці</i></h1>
+        <h1 style="color: blue;"><i>1.13.1 Межі таблиці</i></h1>
+        <div class="styled-div101">
+            <style>
+                .styled-div101 #customers {
+                    font-family: Arial, Helvetica, sans-serif;
+                    border-collapse: collapse;
+                    width: 100%;
+                }
+
+                .styled-div101 #customers td,
+                .styled-div101 #customers th {
+                    border: 1px solid #ddd;
+                    padding: 8px;
+                }
+
+                .styled-div101 #customers tr:nth-child(even) {
+                    background-color: #f2f2f2;
+                }
+
+                .styled-div101 #customers tr:hover {
+                    background-color: #ddd;
+                }
+
+                .styled-div101 #customers th {
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                    text-align: left;
+                    background-color: #4CAF50;
+                    color: white;
+                }
+            </style>
+            <table id="customers">
+                <tr>
+                    <th>Company</th>
+                    <th>Contact</th>
+                    <th>Country</th>
+                </tr>
+                <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                </tr>
+                <tr>
+                    <td>Berglunds snabbköp</td>
+                    <td>Christina Berglund</td>
+                    <td>Sweden</td>
+                </tr>
+                <tr>
+                    <td>Centro comercial Moctezuma</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                </tr>
+                <tr>
+                    <td>Ernst Handel</td>
+                    <td>Roland Mendel</td>
+                    <td>Austria</td>
+                </tr>
+                <tr>
+                    <td>Island Trading</td>
+                    <td>Helen Bennett</td>
+                    <td>UK</td>
+                </tr>
+                <tr>
+                    <td>Königlich Essen</td>
+                    <td>Philip Cramer</td>
+                    <td>Germany</td>
+                </tr>
+                <tr>
+                    <td>Laughing Bacchus Winecellars</td>
+                    <td>Yoshi Tannamuri</td>
+                    <td>Canada</td>
+                </tr>
+                <tr>
+                    <td>Magazzini Alimentari Riuniti</td>
+                    <td>Giovanni Rovelli</td>
+                    <td>Italy</td>
+                </tr>
+                <tr>
+                    <td>North/South</td>
+                    <td>Simon Crowther</td>
+                    <td>UK</td>
+                </tr>
+                <tr>
+                    <td>Paris spécialités</td>
+                    <td>Marie Bertrand</td>
+                    <td>France</td>
+                </tr>
+            </table>
+        </div>
+        <h3 style="color: green;">Приклад 1: Межі таблиці</h3>
+        <div class="styled-div102">
+            <style>
+                .styled-div102 table,
+                .styled-div102 th,
+                .styled-div102 td {
+                    border: 1px solid black;
+                }
+            </style>
+            <table>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                </tr>
+                <tr>
+                    <td>Peter</td>
+                    <td>Griffin</td>
+                </tr>
+                <tr>
+                    <td>Lois</td>
+                    <td>Griffin</td>
+                </tr>
+            </table>
+        </div>
+        <h3 style="color: green;">Приклад 2: Таблиця на всю ширину</h3>
+        <div class="styled-div103">
+            <style>
+                .styled-div103 table,
+                .styled-div103 th,
+                .styled-div103 td {
+                    border: 1px solid black;
+                }
+
+                .styled-div103 table {
+                    width: 100%;
+                }
+            </style>
+            <table>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                </tr>
+                <tr>
+                    <td>Peter</td>
+                    <td>Griffin</td>
+                </tr>
+                <tr>
+                    <td>Lois</td>
+                    <td>Griffin</td>
+                </tr>
+            </table>
+        </div>
+        <h3 style="color: green;">Приклад 3: Згорнути межі таблиці</h3>
+        <div class="styled-div104">
+            <style>
+                .styled-div104 table,
+                .styled-div104 th,
+                .styled-div104 td {
+                    border: 1px solid black;
+                }
+
+                .styled-div104 table {
+                    width: 100%;
+                    border-collapse: collapse;
+                }
+            </style>
+            <table>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                </tr>
+                <tr>
+                    <td>Peter</td>
+                    <td>Griffin</td>
+                </tr>
+                <tr>
+                    <td>Lois</td>
+                    <td>Griffin</td>
+                </tr>
+            </table>
+        </div>
+        <h1 style="color: blue;"><i>1.13.2 CSS Розмір таблиці</i></h1>
+        <h3 style="color: green;">Приклад 1: Ширина та висота таблиці</h3>
+
+        <div class="styled-div105">
+            <style>
+                .styled-div105 table,
+                .styled-div105 th,
+                .styled-div105 td {
+                    border: 1px solid black;
+                }
+
+                .styled-div105 table {
+                    width: 100%;
+                    border-collapse: collapse;
+                }
+
+                .styled-div105 th {
+                    height: 70px;
+                }
+            </style>
+            <table>
+                <tr>
+                    <th>Ім'я</th>
+                    <th>Прізвище</th>
+                    <th>Заробіток</th>
+                </tr>
+                <tr>
+                    <td>Пітер</td>
+                    <td>Гріффін</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Лоїс</td>
+                    <td>Гріффін</td>
+                    <td>$150</td>
+                </tr>
+                <tr>
+                    <td>Джо</td>
+                    <td>Свонсон</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <td>Клівленд</td>
+                    <td>Браун</td>
+                    <td>$250</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <div class="styled-div106">
+            <style>
+                .styled-div106 table,
+                .styled-div106 th,
+                .styled-div106 td {
+                    border: 1px solid black;
+                }
+
+                .styled-div106 table {
+                    width: 50%;
+                    border-collapse: collapse;
+                }
+
+                .styled-div106 th {
+                    height: 70px;
+                }
+            </style>
+            <table>
+                <tr>
+                    <th>Ім'я</th>
+                    <th>Прізвище</th>
+                    <th>Заробіток</th>
+                </tr>
+                <tr>
+                    <td>Пітер</td>
+                    <td>Гріффін</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Лоїс</td>
+                    <td>Гріффін</td>
+                    <td>$150</td>
+                </tr>
+                <tr>
+                    <td>Джо</td>
+                    <td>Свонсон</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <td>Клівленд</td>
+                    <td>Браун</td>
+                    <td>$250</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <h1 style="color: blue;"><i>1.13.3 CSS Вирівнювання в таблиці</i></h1>
+        <h3 style="color: green;">Приклад 1: Горизонтальне вирівнювання</h3>
+        <div class="styled-div107">
+            <style>
+                .styled-div107 table,
+                .styled-div107 th,
+                .styled-div107 td {
+                    border: 1px solid black;
+                }
+
+                .styled-div107 table {
+                    width: 100%;
+                    border-collapse: collapse;
+                }
+
+                .styled-div107 td {
+                    text-align: center;
+                }
+            </style>
+            <table>
+                <tr>
+                    <th>Ім'я</th>
+                    <th>Прізвище</th>
+                    <th>Заробіток</th>
+                </tr>
+                <tr>
+                    <td>Пітер</td>
+                    <td>Гріффін</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Лоїс</td>
+                    <td>Гріффін</td>
+                    <td>$150</td>
+                </tr>
+                <tr>
+                    <td>Джо</td>
+                    <td>Свонсон</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <td>Клівленд</td>
+                    <td>Браун</td>
+                    <td>$250</td>
+                </tr>
+            </table>
+        </div>
+        <h3 style="color: green;">Приклад 2: Вертикальне вирівнювання</h3>
+        <div class="styled-div108">
+            <style>
+                .styled-div108 table,
+                .styled-div108 th,
+                .styled-div108 td {
+                    border: 1px solid black;
+                }
+
+                .styled-div108 table {
+                    width: 100%;
+                    border-collapse: collapse;
+                }
+
+                .styled-div108 td {
+                    height: 50px;
+                    vertical-align: bottom;
+                }
+            </style>
+            <table>
+                <tr>
+                    <th>Ім'я</th>
+                    <th>Прізвище</th>
+                    <th>Заробіток</th>
+                </tr>
+                <tr>
+                    <td>Пітер</td>
+                    <td>Гріффін</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Лоїс</td>
+                    <td>Гріффін</td>
+                    <td>$150</td>
+                </tr>
+                <tr>
+                    <td>Джо</td>
+                    <td>Свонсон</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <td>Клівленд</td>
+                    <td>Браун</td>
+                    <td>$250</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <h1 style="color: blue;"><i>1.13.4 CSS Стиль таблиці</i></h1>
+        <h3 style="color: green;">Приклад 1: Відступи в таблиці - padding</h3>
+        <div class="styled-div109">
+            <style>
+                .styled-div109 table,
+                .styled-div109 th,
+                .styled-div109 td {
+                    border: 1px solid #ddd;
+                    text-align: left;
+                }
+
+                .styled-div109 table {
+                    width: 100%;
+                    border-collapse: collapse;
+                }
+
+                .styled-div109 th,
+                .styled-div109 td {
+                    padding: 15px;
+                }
+            </style>
+            <table>
+                <tr>
+                    <th>Ім'я</th>
+                    <th>Прізвище</th>
+                    <th>Заробіток</th>
+                </tr>
+                <tr>
+                    <td>Пітер</td>
+                    <td>Гріффін</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Лоїс</td>
+                    <td>Гріффін</td>
+                    <td>$150</td>
+                </tr>
+                <tr>
+                    <td>Джо</td>
+                    <td>Свонсон</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <td>Клівленд</td>
+                    <td>Браун</td>
+                    <td>$250</td>
+                </tr>
+            </table>
+        </div>
+        <h3 style="color: green;">Приклад 2: Горизонтальні роздільники</h3>
+        <div class="styled-div110">
+            <style>
+                .styled-div110 table {
+                    width: 100%;
+                    border-collapse: collapse;
+                }
+
+                .styled-div110 th,
+                .styled-div110 td {
+                    padding: 8px;
+                    text-align: left;
+                    border-bottom: 1px solid #ddd;
+                }
+            </style>
+            <table>
+                <tr>
+                    <th>Ім'я</th>
+                    <th>Прізвище</th>
+                    <th>Заробіток</th>
+                </tr>
+                <tr>
+                    <td>Пітер</td>
+                    <td>Гріффін</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Лоїс</td>
+                    <td>Гріффін</td>
+                    <td>$150</td>
+                </tr>
+                <tr>
+                    <td>Джо</td>
+                    <td>Свонсон</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <td>Клівленд</td>
+                    <td>Браун</td>
+                    <td>$250</td>
+                </tr>
+            </table>
+        </div>
+        <h3 style="color: green;">Приклад 3: Виділення рядків таблиці при наведенні</h3>
+        <div class="styled-div111">
+            <style>
+                .styled-div111 table {
+                    width: 100%;
+                    border-collapse: collapse;
+                }
+
+                .styled-div111 th,
+                .styled-div111 td {
+                    padding: 8px;
+                    text-align: left;
+                    border-bottom: 1px solid #ddd;
+                }
+
+                .styled-div111 tr:hover {
+                    background-color: #f5f5f5;
+                }
+            </style>
+            <table>
+                <tr>
+                    <th>Ім'я</th>
+                    <th>Прізвище</th>
+                    <th>Заробіток</th>
+                </tr>
+                <tr>
+                    <td>Пітер</td>
+                    <td>Гріффін</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Лоїс</td>
+                    <td>Гріффін</td>
+                    <td>$150</td>
+                </tr>
+                <tr>
+                    <td>Джо</td>
+                    <td>Свонсон</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <td>Клівленд</td>
+                    <td>Браун</td>
+                    <td>$250</td>
+                </tr>
+            </table>
+        </div>
+        <h3 style="color: green;">Приклад 4: Смугаста таблиця</h3>
+        <div class="styled-div112">
+            <style>
+                .styled-div112 table {
+                    width: 100%;
+                    border-collapse: collapse;
+                }
+
+                .styled-div112 th,
+                .styled-div112 td {
+                    padding: 8px;
+                    text-align: left;
+                }
+
+                .styled-div112 tr:nth-child(even) {
+                    background-color: #f2f2f2;
+                }
+            </style>
+            <table>
+                <tr>
+                    <th>Ім'я</th>
+                    <th>Прізвище</th>
+                    <th>Заробіток</th>
+                </tr>
+                <tr>
+                    <td>Пітер</td>
+                    <td>Гріффін</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Лоїс</td>
+                    <td>Гріффін</td>
+                    <td>$150</td>
+                </tr>
+                <tr>
+                    <td>Джо</td>
+                    <td>Свонсон</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <td>Клівленд</td>
+                    <td>Браун</td>
+                    <td>$250</td>
+                </tr>
+            </table>
+        </div>
+        <h3 style="color: green;">Приклад 5: Колір таблиці</h3>
+        <div class="styled-div113">
+            <style>
+                .styled-div113 table {
+                    width: 100%;
+                    border-collapse: collapse;
+                }
+
+                .styled-div113 th,
+                .styled-div113 td {
+                    padding: 8px;
+                    text-align: left;
+                }
+
+                .styled-div113 tr:nth-child(even) {
+                    background-color: #f2f2f2;
+                }
+
+                .styled-div113 th {
+                    background-color: #4c56af;
+                    color: white;
+                }
+            </style>
+            <table>
+                <tr>
+                    <th>Ім'я</th>
+                    <th>Прізвище</th>
+                    <th>Заробіток</th>
+                </tr>
+                <tr>
+                    <td>Пітер</td>
+                    <td>Гріффін</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Лоїс</td>
+                    <td>Гріффін</td>
+                    <td>$150</td>
+                </tr>
+                <tr>
+                    <td>Джо</td>
+                    <td>Свонсон</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <td>Клівленд</td>
+                    <td>Браун</td>
+                    <td>$250</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <h1 style="color: blue;"><i>1.13.5 CSS Адаптивна (чутлива) таблиця</i></h1>
+        <h3 style="color: green;">Приклад 1: CSS Адаптивна (чутлива) таблиця</h3>
+        <div class="styled-div114">
+            <style>
+                .styled-div114 table {
+                    width: 100%;
+                    border-collapse: collapse;
+                }
+
+                .styled-div114 th,
+                .styled-div114 td {
+                    padding: 8px;
+                    text-align: left;
+                }
+
+                .styled-div114 tr:nth-child(even) {
+                    background-color: #f2f2f2;
+                }
+            </style>
+            <div style="overflow-x:auto;">
+                <table>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Points</th>
+                        <th>Points</th>
+                        <th>Points</th>
+                        <th>Points</th>
+                        <th>Points</th>
+                        <th>Points</th>
+                        <th>Points</th>
+                        <th>Points</th>
+                        <th>Points</th>
+                        <th>Points</th>
+                    </tr>
+                    <tr>
+                        <td>Jill</td>
+                        <td>Smith</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Eve</td>
+                        <td>Jackson</td>
+                        <td>94</td>
+                        <td>94</td>
+                        <td>94</td>
+                        <td>94</td>
+                        <td>94</td>
+                        <td>94</td>
+                        <td>94</td>
+                        <td>94</td>
+                        <td>94</td>
+                        <td>94</td>
+                    </tr>
+                    <tr>
+                        <td>Adam</td>
+                        <td>Johnson</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>67</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Set the border to "2px solid green" for table, th and td elements. -->
+        <div class="styled-div115">
+            <style>
+                .styled-div115 table,
+                .styled-div115 th,
+                .styled-div115 td {
+                    border: 2px solid green;
+                }
+            </style>
+            <table>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                </tr>
+                <tr>
+                    <td>Peter</td>
+                    <td>Griffin</td>
+                </tr>
+                <tr>
+                    <td>Lois</td>
+                    <td>Griffin</td>
+                </tr>
+            </table>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Collapse the table borders into a single border. -->
+        <div class="styled-div116">
+            <style>
+                .styled-div116 table {
+                    border-collapse: collapse;
+                }
+
+                .styled-div116 table,
+                .styled-div116 th,
+                .styled-div116 td {
+                    border: 1px solid green;
+                }
+            </style>
+            <table>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                </tr>
+                <tr>
+                    <td>Peter</td>
+                    <td>Griffin</td>
+                </tr>
+                <tr>
+                    <td>Lois</td>
+                    <td>Griffin</td>
+                </tr>
+            </table>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Use inline styles to set the width of the table to "100%". -->
+        <div class="styled-div117">
+            <table style="width:100%">
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                </tr>
+                <tr>
+                    <td>Peter</td>
+                    <td>Griffin</td>
+                </tr>
+                <tr>
+                    <td>Lois</td>
+                    <td>Griffin</td>
+                </tr>
+            </table>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Set the text alignment in <td> elements to "right". -->
+        <div class="styled-div118">
+            <style>
+                .styled-div118 table,
+                .styled-div118 th,
+                .styled-div118 td {
+                    border: 1px solid green;
+                }
+
+                .styled-div118 td {
+                    text-align: right;
+                }
+            </style>
+            <table>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                </tr>
+                <tr>
+                    <td>Peter</td>
+                    <td>Griffin</td>
+                </tr>
+                <tr>
+                    <td>Lois</td>
+                    <td>Griffin</td>
+                </tr>
+            </table>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Set the padding in <th> elements to "15px". -->
+        <div class="styled-div119">
+            <style>
+                .styled-div119 table,
+                .styled-div119 th,
+                .styled-div119 td {
+                    border: 1px solid green;
+                }
+
+                .styled-div119 th {
+                    padding: 15px;
+                }
+            </style>
+            <table>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                </tr>
+                <tr>
+                    <td>Peter</td>
+                    <td>Griffin</td>
+                </tr>
+                <tr>
+                    <td>Lois</td>
+                    <td>Griffin</td>
+                </tr>
+            </table>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Set the background color of <th> elements to "lightblue". -->
+        <div class="styled-div120">
+            <style>
+                .styled-div120 table,
+                .styled-div120 th,
+                .styled-div120 td {
+                    border: 1px solid green;
+                }
+
+                .styled-div120 th {
+                    background-color: lightblue;
+                }
+            </style>
+            <table>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                </tr>
+                <tr>
+                    <td>Peter</td>
+                    <td>Griffin</td>
+                </tr>
+                <tr>
+                    <td>Lois</td>
+                    <td>Griffin</td>
+                </tr>
+            </table>
+        </div>
+        <br><br><br>
+        <h1 style="color: blue;"><i>2. CSS Розширений</i></h1>
+        <h1 style="color: blue;"><i>2.1 CSS Закруглені кути</i></h1>
+        <h3 style="color: green;">Приклад 1: CSS властивість border-radius</h3>
+        <div class="styled-div121">
+            <style>
+                .styled-div121 #rcorners1 {
+                    border-radius: 25px;
+                    background: #215ead;
+                    padding: 20px;
+                    width: 200px;
+                    height: 150px;
+                }
+
+                .styled-div121 #rcorners2 {
+                    border-radius: 25px;
+                    border: 2px solid #73AD21;
+                    padding: 20px;
+                    width: 200px;
+                    height: 150px;
+                }
+
+                .styled-div121 #rcorners3 {
+                    border-radius: 25px;
+                    background: url('https://w3schoolsua.github.io/images/paper.gif');
+                    background-position: left top;
+                    background-repeat: repeat;
+                    padding: 20px;
+                    width: 200px;
+                    height: 150px;
+                }
+            </style>
+            <h1>Властивість border-radius</h1>
+
+            <p>Закруглені кути для елемента з заданим кольором фону:</p>
+            <p id="rcorners1">Закруглені кути!</p>
+            <p>Закруглені кути для елемента з межею:</p>
+            <p id="rcorners2">Закруглені кути!</p>
+            <p>Закруглені кути елемента з фоновим зображенням:</p>
+            <p id="rcorners3">Закруглені кути!</p>
+        </div>
+        <h3 style="color: green;">Приклад 2: CSS border-radius - Вкажіть кожен кут</h3>
+        <div class="styled-div122">
+            <style>
+                .styled-div122 #rcorners01 {
+                    border-radius: 15px 50px 30px 5px;
+                    background: #4b21ad;
+                    padding: 20px;
+                    width: 200px;
+                    height: 150px;
+                }
+
+                .styled-div122 #rcorners02 {
+                    border-radius: 15px 50px 30px;
+                    background: #4b21ad;
+                    padding: 20px;
+                    width: 200px;
+                    height: 150px;
+                }
+
+                .styled-div122 #rcorners03 {
+                    border-radius: 15px 50px;
+                    background: #4b21ad;
+                    padding: 20px;
+                    width: 200px;
+                    height: 150px;
+                }
+
+                .styled-div122 #rcorners04 {
+                    border-radius: 15px;
+                    background: #4b21ad;
+                    padding: 20px;
+                    width: 200px;
+                    height: 150px;
+                }
+
+                .styled-div122 #rcorners05 {
+                    border-radius: 50px / 15px;
+                    background: #4b21ad;
+                    padding: 20px;
+                    width: 200px;
+                    height: 150px;
+                }
+
+                .styled-div122 #rcorners06 {
+                    border-radius: 15px / 50px;
+                    background: #4b21ad;
+                    padding: 20px;
+                    width: 200px;
+                    height: 150px;
+                }
+
+                .styled-div122 #rcorners07 {
+                    border-radius: 50%;
+                    background: #4b21ad;
+                    padding: 20px;
+                    width: 200px;
+                    height: 150px;
+                }
+            </style>
+            <h1>Властивість border-radius</h1>
+
+            <p>Чотири значення - border-radius: 15px 50px 30px 5px:</p>
+            <p id="rcorners01"></p>
+
+            <p>Три значення - border-radius: 15px 50px 30px:</p>
+            <p id="rcorners02"></p>
+
+            <p>Два значення - border-radius: 15px 50px:</p>
+            <p id="rcorners03"></p>
+
+            <p>Одне значення - border-radius: 15px:</p>
+            <p id="rcorners04"></p>
+            <p>Еліптична межа - border-radius: 50px / 15px:</p>
+            <p id="rcorners05"></p>
+
+            <p>Еліптична межа - border-radius: 15px / 50px:</p>
+            <p id="rcorners06"></p>
+
+            <p>Еліптична межа - border-radius: 50%:</p>
+            <p id="rcorners07"></p>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Give the div element rounded corners. -->
+        <div class="styled-div123">
+            <style>
+                .styled-div123 div {
+                    background: red;
+                    border-radius: 10px;
+                }
+            </style>
+            <div>This is a div element. It has some text.</div>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Give the div element a rounded corner on the bottom left side. -->
+        <div class="styled-div124">
+            <style>
+                .styled-div124 div {
+                    background: red;
+                    border-bottom-left-radius: 10px;
+                }
+            </style>
+            <div>This is a div element. It has some text.</div>
+        </div>
+        <h1 style="color: blue;"><i>2.2 CSS Анімації</i></h1>
+        <h3 style="color: green;">Приклад 1: Правило @keyframes (ключові кадри)</h3>
+        <div class="styled-div125">
+            <style>
+                .styled-div125 div {
+                    width: 100px;
+                    height: 100px;
+                    background-color: red;
+                    animation-name: example;
+                    animation-duration: 4s;
+                    animation-iteration-count: infinite;
+                }
+
+                @keyframes example {
+                    from {
+                        background-color: red;
+                    }
+
+                    to {
+                        background-color: yellow;
+                    }
+                }
+            </style>
+            <div></div>
+        </div><br>
+        <div class="styled-div126">
+            <style>
+                .styled-div126 div {
+                    width: 100px;
+                    height: 100px;
+                    background-color: red;
+                    animation-name: example1;
+                    animation-duration: 5s;
+                    animation-iteration-count: infinite;
+                }
+
+                @keyframes example1 {
+                    0% {
+                        background-color: red;
+                    }
+
+                    25% {
+                        background-color: yellow;
+                    }
+
+                    50% {
+                        background-color: blue;
+                    }
+
+                    100% {
+                        background-color: green;
+                    }
+                }
+            </style>
+            <div></div>
+        </div>
+        <br>
+        <div class="styled-div127">
+            <style>
+                .styled-div127 div {
+                    width: 100px;
+                    height: 100px;
+                    background-color: red;
+                    position: relative;
+                    animation-name: example2;
+                    animation-duration: 5s;
+                    animation-iteration-count: infinite;
+                }
+
+                @keyframes example2 {
+                    0% {
+                        background-color: red;
+                        left: 0px;
+                        top: 0px;
+                    }
+
+                    25% {
+                        background-color: yellow;
+                        left: 200px;
+                        top: 0px;
+                    }
+
+                    50% {
+                        background-color: blue;
+                        left: 200px;
+                        top: 200px;
+                    }
+
+                    75% {
+                        background-color: green;
+                        left: 0px;
+                        top: 200px;
+                    }
+
+                    100% {
+                        background-color: red;
+                        left: 0px;
+                        top: 0px;
+                    }
+                }
+            </style>
+            <div></div><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        <h3 style="color: green;">Приклад 2: Затримка анімації</h3>
+        <div class="styled-div128">
+            <style>
+                .styled-div128 div {
+                    width: 100px;
+                    height: 100px;
+                    background-color: red;
+                    position: relative;
+                    animation-name: example3;
+                    animation-duration: 4s;
+                    animation-delay: 2s;
+                    animation-iteration-count: infinite;
+                }
+
+                @keyframes example3 {
+                    0% {
+                        background-color: red;
+                        left: 0px;
+                        top: 0px;
+                    }
+
+                    25% {
+                        background-color: yellow;
+                        left: 200px;
+                        top: 0px;
+                    }
+
+                    50% {
+                        background-color: blue;
+                        left: 200px;
+                        top: 200px;
+                    }
+
+                    75% {
+                        background-color: green;
+                        left: 0px;
+                        top: 200px;
+                    }
+
+                    100% {
+                        background-color: red;
+                        left: 0px;
+                        top: 0px;
+                    }
+                }
+            </style>
+            <div></div><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        <div class="styled-div129">
+            <style>
+                .styled-div129 div {
+                    width: 100px;
+                    height: 100px;
+                    background-color: red;
+                    position: relative;
+                    animation-name: example4;
+                    animation-duration: 4s;
+                    animation-delay: -2s;
+                }
+
+                @keyframes example4 {
+                    0% {
+                        background-color: red;
+                        left: 0px;
+                        top: 0px;
+                    }
+
+                    25% {
+                        background-color: yellow;
+                        left: 200px;
+                        top: 0px;
+                    }
+
+                    50% {
+                        background-color: blue;
+                        left: 200px;
+                        top: 200px;
+                    }
+
+                    75% {
+                        background-color: green;
+                        left: 0px;
+                        top: 200px;
+                    }
+
+                    100% {
+                        background-color: red;
+                        left: 0px;
+                        top: 0px;
+                    }
+                }
+            </style>
+            <div></div>
+        </div>
+        <h3 style="color: green;">Приклад 3: Встановіть, скільки разів анімація має запускатися</h3>
+        <div class="styled-div130">
+            <style>
+                .styled-div130 div {
+                    width: 100px;
+                    height: 100px;
+                    background-color: red;
+                    position: relative;
+                    animation-name: example5;
+                    animation-duration: 4s;
+                    animation-delay: 2s;
+                    animation-iteration-count: infinite;
+                }
+
+                @keyframes example5 {
+                    0% {
+                        background-color: red;
+                        left: 0px;
+                        top: 0px;
+                    }
+
+                    25% {
+                        background-color: yellow;
+                        left: 200px;
+                        top: 0px;
+                    }
+
+                    50% {
+                        background-color: blue;
+                        left: 200px;
+                        top: 200px;
+                    }
+
+                    75% {
+                        background-color: green;
+                        left: 0px;
+                        top: 200px;
+                    }
+
+                    100% {
+                        background-color: red;
+                        left: 0px;
+                        top: 0px;
+                    }
+                }
+            </style>
+            <div></div><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        <h3 style="color: green;">Приклад 4: Запустіть анімацію в зворотньому напрямку або альтернативних циклах</h3>
+        <div class="styled-div131">
+            <style>
+                .styled-div131 div {
+                    width: 100px;
+                    height: 100px;
+                    background-color: red;
+                    position: relative;
+                    animation-name: example6;
+                    animation-duration: 4s;
+                    animation-delay: 2s;
+                    animation-iteration-count: infinite;
+                    animation-direction: reverse;
+                }
+
+                @keyframes example6 {
+                    0% {
+                        background-color: red;
+                        left: 0px;
+                        top: 0px;
+                    }
+
+                    25% {
+                        background-color: yellow;
+                        left: 200px;
+                        top: 0px;
+                    }
+
+                    50% {
+                        background-color: blue;
+                        left: 200px;
+                        top: 200px;
+                    }
+
+                    75% {
+                        background-color: green;
+                        left: 0px;
+                        top: 200px;
+                    }
+
+                    100% {
+                        background-color: red;
+                        left: 0px;
+                        top: 0px;
+                    }
+                }
+            </style>
+            <div></div>
+        </div><br><br><br><br><br><br><br><br><br><br>
+        <div class="styled-div132">
+            <style>
+                .styled-div132 div {
+                    width: 100px;
+                    height: 100px;
+                    background-color: red;
+                    position: relative;
+                    animation-name: example7;
+                    animation-duration: 4s;
+                    animation-delay: 2s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                }
+
+                @keyframes example7 {
+                    0% {
+                        background-color: red;
+                        left: 0px;
+                        top: 0px;
+                    }
+
+                    25% {
+                        background-color: yellow;
+                        left: 200px;
+                        top: 0px;
+                    }
+
+                    50% {
+                        background-color: blue;
+                        left: 200px;
+                        top: 200px;
+                    }
+
+                    75% {
+                        background-color: green;
+                        left: 0px;
+                        top: 200px;
+                    }
+
+                    100% {
+                        background-color: red;
+                        left: 0px;
+                        top: 0px;
+                    }
+                }
+            </style>
+            <div></div>
+        </div><br><br><br><br><br><br><br><br><br><br>
+        <div class="styled-div133">
+            <style>
+                .styled-div133 div {
+                    width: 100px;
+                    height: 100px;
+                    background-color: red;
+                    position: relative;
+                    animation-name: example8;
+                    animation-duration: 4s;
+                    animation-delay: 2s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate-reverse;
+                }
+
+                @keyframes example8 {
+                    0% {
+                        background-color: red;
+                        left: 0px;
+                        top: 0px;
+                    }
+
+                    25% {
+                        background-color: yellow;
+                        left: 200px;
+                        top: 0px;
+                    }
+
+                    50% {
+                        background-color: blue;
+                        left: 200px;
+                        top: 200px;
+                    }
+
+                    75% {
+                        background-color: green;
+                        left: 0px;
+                        top: 200px;
+                    }
+
+                    100% {
+                        background-color: red;
+                        left: 0px;
+                        top: 0px;
+                    }
+                }
+            </style>
+            <div></div>
+        </div><br><br><br><br><br><br><br><br><br><br>
+        <h3 style="color: green;">Приклад 5: Вкажіть криву швидкості анімації</h3>
+        <div class="styled-div134">
+            <style>
+                .styled-div134 div {
+                    width: 100px;
+                    height: 50px;
+                    background-color: rgb(0, 110, 255);
+                    font-weight: bold;
+                    position: relative;
+                    animation: mymove 5s infinite;
+                }
+
+                .styled-div134 #div1 {
+                    animation-timing-function: linear;
+                }
+
+                .styled-div134 #div2 {
+                    animation-timing-function: ease;
+                }
+
+                .styled-div134 #div3 {
+                    animation-timing-function: ease-in;
+                }
+
+                .styled-div134 #div4 {
+                    animation-timing-function: ease-out;
+                }
+
+                .styled-div134 #div5 {
+                    animation-timing-function: ease-in-out;
+                }
+
+                @keyframes mymove {
+                    from {
+                        left: 0;
+                    }
+
+                    to {
+                        left: 300px;
+                    }
+                }
+            </style>
+            <div id="div1">linear</div>
+            <div id="div2">ease</div>
+            <div id="div3">ease-in</div>
+            <div id="div4">ease-out</div>
+            <div id="div5">ease-in-out</div>
+        </div><br>
+        <h3 style="color: green;">Приклад 6: Вкажіть режим заповнення для анімації</h3>
+        <div class="styled-div135">
+            <style>
+                .styled-div135 div {
+                    width: 100px;
+                    height: 100px;
+                    background: red;
+                    position: relative;
+                    animation-name: example10;
+                    animation-duration: 3s;
+                    animation-fill-mode: forwards;
+                    animation-iteration-count: infinite;
+                }
+
+                @keyframes example10 {
+                    from {
+                        top: 0px;
+                    }
+
+                    to {
+                        top: 200px;
+                        background-color: blue;
+                    }
+                }
+            </style>
+            <div></div>
+        </div><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="styled-div136">
+            <style>
+                .styled-div136 div {
+                    width: 100px;
+                    height: 100px;
+                    background: red;
+                    position: relative;
+                    animation-name: example11;
+                    animation-duration: 3s;
+                    animation-delay: 2s;
+                    animation-fill-mode: backwards;
+
+                }
+
+                @keyframes example11 {
+                    from {
+                        top: 0px;
+                        background-color: yellow;
+                    }
+
+                    to {
+                        top: 200px;
+                    }
+                }
+            </style>
+            <div></div>
+        </div><br><br><br><br><br><br><br><br><br><br>
+        <div class="styled-div137">
+            <style>
+                .styled-div137 div {
+                    width: 100px;
+                    height: 100px;
+                    background: red;
+                    position: relative;
+                    animation-name: example13;
+                    animation-duration: 3s;
+                    animation-delay: 2s;
+                    animation-fill-mode: both;
+                    animation-iteration-count: infinite;
+                }
+
+                @keyframes example13 {
+                    from {
+                        top: 0px;
+                        background-color: yellow;
+                    }
+
+                    to {
+                        top: 200px;
+                        background-color: blue;
+                    }
+                }
+            </style>
+            <div></div>
+        </div><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h3 style="color: green;">Приклад 7: Скорочені властивості анімації</h3>
+        <div class="styled-div138">
+            <style>
+                .styled-div138 div {
+                    width: 100px;
+                    height: 100px;
+                    background-color: red;
+                    position: relative;
+                    animation-name: example14;
+                    animation-duration: 5s;
+                    animation-timing-function: linear;
+                    animation-delay: 2s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                }
+
+                @keyframes example14 {
+                    0% {
+                        background-color: red;
+                        left: 0px;
+                        top: 0px;
+                    }
+
+                    25% {
+                        background-color: yellow;
+                        left: 200px;
+                        top: 0px;
+                    }
+
+                    50% {
+                        background-color: blue;
+                        left: 200px;
+                        top: 200px;
+                    }
+
+                    75% {
+                        background-color: green;
+                        left: 0px;
+                        top: 200px;
+                    }
+
+                    100% {
+                        background-color: red;
+                        left: 0px;
+                        top: 0px;
+                    }
+                }
+            </style>
+            <div></div>
+        </div><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="styled-div139">
+            <style>
+                .styled-div139 div {
+                    width: 100px;
+                    height: 100px;
+                    background-color: red;
+                    position: relative;
+                    animation: myfirst 5s linear 2s infinite alternate;
+                }
+
+                @keyframes myfirst {
+                    0% {
+                        background-color: red;
+                        left: 0px;
+                        top: 0px;
+                    }
+
+                    25% {
+                        background-color: yellow;
+                        left: 200px;
+                        top: 0px;
+                    }
+
+                    50% {
+                        background-color: blue;
+                        left: 200px;
+                        top: 200px;
+                    }
+
+                    75% {
+                        background-color: green;
+                        left: 0px;
+                        top: 200px;
+                    }
+
+                    100% {
+                        background-color: red;
+                        left: 0px;
+                        top: 0px;
+                    }
+                }
+            </style>
+            <div></div>
+        </div><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h3 style="color: purple;">Вправа</h3>
+        <!--Add a 2 second transition effect for width changes of the <div> element. -->
+        <div class="styled-div140">
+            <style>
+                .styled-div140 div {
+                    width: 100px;
+                    height: 100px;
+                    background: rgb(229, 255, 0);
+                    transition: width 2s;
+                }
+
+                .styled-div140 div:hover {
+                    width: 300px;
+                }
+            </style>
+            <div>This is a div</div>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!--Specify that the transition of the <div> element should have a "ease-in-out" speed curve. -->
+        <div class="styled-div141">
+            <style>
+                .styled-div141 div {
+                    width: 100px;
+                    height: 100px;
+                    background: rgb(229, 255, 0);
+                    transition: width 2s;
+                    transition-timing-function: ease-in-out;
+                }
+
+                .styled-div141 div:hover {
+                    width: 300px;
+                }
+            </style>
+            <div>This is a div</div>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!--Specify that the transition of the <div> element should have a "0.5" second delay before starting. -->
+        <div class="styled-div142">
+            <style>
+                .styled-div142 div {
+                    width: 100px;
+                    height: 100px;
+                    background: rgb(229, 255, 0);
+                    transition: width 2s;
+                    transition-delay: 0.5s;
+                }
+
+                .styled-div142 div:hover {
+                    width: 300px;
+                }
+            </style>
+            <div>This is a div</div>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!--Add a 2 second transition effect for background, and transform changes of the <div> element. -->
+        <div class="styled-div143">
+            <style>
+                .styled-div143 div {
+                    width: 100px;
+                    height: 100px;
+                    background: rgb(229, 255, 0);
+                    transition: background 2s, transform 2s;
+                    transition-delay: 0.5s;
+                }
+
+                .styled-div143 div:hover {
+                    background: blue;
+                    transform: rotate(180deg);
+                }
+            </style>
+            <div>This is a div</div>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!--Using the transition shorthand property, specify width changes for the <div> element should have: "2" second duration, "ease-in-out" speed curve, and a "0.5" second delay before starting.-->
+        <div class="styled-div144">
+            <style>
+                .styled-div144 div {
+                    width: 100px;
+                    height: 100px;
+                    background: rgb(229, 255, 0);
+                    transition: width 2s ease-in-out 0.5s;
+                    transition-delay: 0.5s;
+                }
+
+                .styled-div144 div:hover {
+                    width: 400px;
+                }
+            </style>
+            <div>This is a div</div>
+        </div>
+        <br>
+        <h1 style="color: blue;"><i>2.3 CSS Підказки</i></h1>
+        <h3 style="color: green;">Приклад 1: Основна (базова) підказка</h3>
+        <div class="tooltip">
+            <style>
+                .tooltip0 {
+                    position: relative;
+                    display: inline-block;
+                    border-bottom: 1px dotted black;
+                }
+
+                .tooltip0 .tooltiptext0 {
+                    visibility: hidden;
+                    width: 120px;
+                    background-color: black;
+                    color: #fff;
+                    text-align: center;
+                    border-radius: 6px;
+                    padding: 5px 0;
+
+                    /* Position the tooltip */
+                    position: absolute;
+                    z-index: 1;
+                }
+
+                .tooltip0:hover .tooltiptext0 {
+                    visibility: visible;
+                }
+            </style>
+            <div class="tooltip0">Hover over me
+                <span class="tooltiptext0">Glory to UKRAINE!</span>
+            </div>
+        </div>
+        <h3 style="color: green;">Приклад 2: Позиціонування виринаючих підказок</h3>
+        <div class="styled-div145">
+            <style>
+                .styled-div145 .tooltip1 {
+                    position: relative;
+                    display: inline-block;
+                    border-bottom: 1px dotted black;
+                }
+
+                .styled-div145 .tooltip2 {
+                    position: relative;
+                    display: inline-block;
+                    border-bottom: 1px dotted black;
+                }
+
+                .styled-div145 .tooltip3 {
+                    position: relative;
+                    display: inline-block;
+                    border-bottom: 1px dotted black;
+                }
+
+                .styled-div145 .tooltip4 {
+                    position: relative;
+                    display: inline-block;
+                    border-bottom: 1px dotted black;
+                }
+
+                .styled-div145 .tooltip1 .tooltiptext1 {
+                    visibility: hidden;
+                    width: 120px;
+                    background-color: black;
+                    color: #fff;
+                    text-align: center;
+                    border-radius: 6px;
+                    padding: 5px 0;
+                    position: absolute;
+                    z-index: 1;
+                    top: -5px;
+                    left: 105%;
+                }
+
+                .styled-div145 .tooltip2 .tooltiptext2 {
+                    visibility: hidden;
+                    width: 120px;
+                    background-color: black;
+                    color: #fff;
+                    text-align: center;
+                    border-radius: 6px;
+                    padding: 5px 0;
+                    position: absolute;
+                    z-index: 1;
+                    top: -5px;
+                    right: 105%;
+                }
+
+                .styled-div145 .tooltip3 .tooltiptext3 {
+                    visibility: hidden;
+                    width: 120px;
+                    background-color: black;
+                    color: #fff;
+                    text-align: center;
+                    border-radius: 6px;
+                    padding: 5px 0;
+                    position: absolute;
+                    z-index: 1;
+                    width: 120px;
+                    bottom: 100%;
+                    left: 50%;
+                    margin-left: -60px;
+                }
+
+                .styled-div145 .tooltip4 .tooltiptext4 {
+                    visibility: hidden;
+                    width: 120px;
+                    background-color: black;
+                    color: #fff;
+                    text-align: center;
+                    border-radius: 6px;
+                    padding: 5px 0;
+                    position: absolute;
+                    z-index: 1;
+                    width: 120px;
+                    top: 100%;
+                    left: 50%;
+                    margin-left: -60px;
+                }
+
+                .styled-div145 .tooltip1:hover .tooltiptext1 {
+                    visibility: visible;
+                }
+
+                .styled-div145 .tooltip2:hover .tooltiptext2 {
+                    visibility: visible;
+                }
+
+                .styled-div145 .tooltip3:hover .tooltiptext3 {
+                    visibility: visible;
+                }
+
+                .styled-div145 .tooltip4:hover .tooltiptext4 {
+                    visibility: visible;
+                }
+            </style>
+            <div class="tooltip1">Hover over me
+                <span class="tooltiptext1">Glory to UKRAINE!</span>
+            </div>
+            <br>
+            <div class="tooltip2">Hover over me
+                <span class="tooltiptext2">Glory to UKRAINE!</span>
+            </div><br>
+            <div class="tooltip3">Hover over me
+                <span class="tooltiptext3">Glory to UKRAINE!</span>
+            </div><br>
+            <div class="tooltip4">Hover over me
+                <span class="tooltiptext4">Glory to UKRAINE!</span>
+            </div><br>
+        </div>
+        <h3 style="color: green;">Приклад 3: Підказка зі стрілкою</h3>
+        <div class="styled-div146">
+            <style>
+                .styled-div146 .tooltip01 {
+                    position: relative;
+                    display: inline-block;
+                    border-bottom: 1px dotted black;
+                }
+
+                .styled-div146 .tooltip01 .tooltiptext01 {
+                    visibility: hidden;
+                    width: 120px;
+                    background-color: black;
+                    color: #fff;
+                    text-align: center;
+                    border-radius: 6px;
+                    padding: 5px 0;
+                    position: absolute;
+                    z-index: 1;
+                    bottom: 150%;
+                    left: 50%;
+                    margin-left: -60px;
+                }
+
+                .styled-div146 .tooltip01 .tooltiptext01::after {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    margin-left: -5px;
+                    border-width: 5px;
+                    border-style: solid;
+                    border-color: black transparent transparent transparent;
+                }
+
+                .styled-div146 .tooltip01:hover .tooltiptext01 {
+                    visibility: visible;
+                }
+            </style>
+            <div class="tooltip01">Hover over me
+                <span class="tooltiptext01">Glory to UKRAINE!</span>
+            </div>
+        </div>
+        <h3 style="color: green;">Приклад 4: Виринаючі підказки (анімація)</h3>
+        <div class="styled-div147">
+            <style>
+                .styled-div147 .tooltip02 {
+                    position: relative;
+                    display: inline-block;
+                    border-bottom: 1px dotted black;
+                }
+
+                .styled-div147 .tooltip02 .tooltiptext02 {
+                    visibility: hidden;
+                    width: 120px;
+                    background-color: black;
+                    color: #fff;
+                    text-align: center;
+                    border-radius: 6px;
+                    padding: 5px 0;
+                    position: absolute;
+                    z-index: 1;
+                    bottom: 100%;
+                    left: 50%;
+                    margin-left: -60px;
+                    opacity: 0;
+                    transition: opacity 1s;
+                }
+
+                .styled-div147 .tooltip02 .tooltiptext02::after {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    margin-left: -5px;
+                    border-width: 5px;
+                    border-style: solid;
+                    border-color: black transparent transparent transparent;
+                }
+
+                .styled-div147 .tooltip02:hover .tooltiptext02 {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            </style>
+            <div class="tooltip02">Hover over me
+                <span class="tooltiptext02">Glory to UKRAINE!</span>
+            </div>
+        </div>
+        <br>
+        <h1 style="color: blue;"><i>2.4 CSS Кнопки</i></h1>
+        <h3 style="color: green;">Приклад 1: Основні стилі кнопок</h3>
+        <div class="styled-div148">
+            <style>
+                .styled-div148 .button1 {
+                    background-color: #2c1d81;
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                }
+            </style>
+            <button>Default Button</button>
+            <a href="#" class="button1">Link Button</a>
+            <button class="button1">Button</button>
+            <input type="button1" class="button1" value="Input Button">
+        </div>
+        <h3 style="color: green;">Приклад 2: Кольори кнопок</h3>
+        <div class="styled-div148">
+            <style>
+                .styled-div148 .button {
+                    background-color: #04AA6D;
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                }
+
+                .styled-div148 .button3 {
+                    background-color: #008CBA;
+                }
+
+                /* Blue */
+                .styled-div148 .button4 {
+                    background-color: #f44336;
+                }
+
+                /* Red */
+                .styled-div148 .button5 {
+                    background-color: #e7e7e7;
+                    color: black;
+                }
+
+                /* Gray */
+                .styled-div148 .button6 {
+                    background-color: #555555;
+                }
+
+                /* Black */
+            </style>
+            <button class="button">Green</button>
+            <button class="button button3">Blue</button>
+            <button class="button button4">Red</button>
+            <button class="button button5">Gray</button>
+            <button class="button button6">Black</button>
+        </div>
+        <h3 style="color: green;">Приклад 3: Розмір кнопок</h3>
+        <div class="styled-div149">
+            <style>
+                .styled-div149 .button {
+                    background-color: #4CAF99;
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                }
+
+                .styled-div149 .button7 {
+                    font-size: 10px;
+                }
+
+                .styled-div149 .button8 {
+                    font-size: 12px;
+                }
+
+                .styled-div149 .button9 {
+                    font-size: 16px;
+                }
+
+                .styled-div149 .button10 {
+                    font-size: 20px;
+                }
+
+                .styled-div149 .button11 {
+                    font-size: 24px;
+                }
+            </style>
+            <button class="button button7">10px</button>
+            <button class="button button8">12px</button>
+            <button class="button button9">16px</button>
+            <button class="button button10">20px</button>
+            <button class="button button11">24px</button>
+
+        </div>
+        <div class="styled-div150">
+            <style>
+                .styled-div150 .button {
+                    background-color: #4CAF99;
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                }
+
+                .styled-div150 .button12 {
+                    padding: 10px 24px;
+                }
+
+                .styled-div150 .button13 {
+                    padding: 12px 28px;
+                }
+
+                .styled-div150 .button14 {
+                    padding: 14px 40px;
+                }
+
+                .styled-div150 .button15 {
+                    padding: 32px 16px;
+                }
+
+                .styled-div150 .button16 {
+                    padding: 16px;
+                }
+            </style>
+            <button class="button button12">10px 24px</button>
+            <button class="button button13">12px 28px</button>
+            <button class="button button14">14px 40px</button>
+            <button class="button button15">32px 16px</button>
+            <button class="button button16">16px</button>
+
+        </div>
+        <h3 style="color: green;">Приклад 4: Округлі кнопки</h3>
+        <div class="styled-div151">
+            <style>
+                .styled-div151 .button {
+                    background-color: #2CFA80;
+                    /* Green */
+                    border: none;
+                    color: white;
+                    padding: 20px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                }
+
+                .styled-div151 .button17 {
+                    border-radius: 2px;
+                }
+
+                .styled-div151 .button18 {
+                    border-radius: 4px;
+                }
+
+                .styled-div151 .button19 {
+                    border-radius: 8px;
+                }
+
+                .styled-div151 .button20 {
+                    border-radius: 12px;
+                }
+
+                .styled-div151 .button21 {
+                    border-radius: 50%;
+                }
+            </style>
+            <button class="button button17">2px</button>
+            <button class="button button18">4px</button>
+            <button class="button button19">8px</button>
+            <button class="button button20">12px</button>
+            <button class="button button21">50%</button>
+
+        </div>
+        <h3 style="color: green;">Приклад 5: Округлі кнопки</h3>
+        <div class="styled-div152">
+            <style>
+                .styled-div152 .button {
+                    background-color: #4CAF50;
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                }
+
+                .styled-div152 .button22 {
+                    background-color: white;
+                    color: black;
+                    border: 2px solid #4CAF50;
+                }
+
+                .styled-div152 .button22:hover {
+                    background-color: #4CAF50;
+                    color: white;
+                }
+
+                .styled-div152 .button23 {
+                    background-color: white;
+                    color: black;
+                    border: 2px solid #008CBA;
+                }
+
+                .styled-div152 .button23:hover {
+                    background-color: #008CBA;
+                    color: white;
+                }
+
+                .styled-div152 .button24 {
+                    background-color: white;
+                    color: black;
+                    border: 2px solid #f44336;
+                }
+
+                .styled-div152 .button24:hover {
+                    background-color: #f44336;
+                    color: white;
+                }
+
+                .styled-div152 .button25 {
+                    background-color: white;
+                    color: black;
+                    border: 2px solid #e7e7e7;
+                }
+
+                .styled-div152 .button25:hover {
+                    background-color: #e7e7e7;
+                }
+
+                .styled-div152 .button26 {
+                    background-color: white;
+                    color: black;
+                    border: 2px solid #555555;
+                }
+
+                .styled-div152 .button26:hover {
+                    background-color: #555;
+                    color: white;
+                }
+            </style>
+            <button class="button button22">Green</button>
+            <button class="button button23">Blue</button>
+            <button class="button button24">Red</button>
+            <button class="button button25">Gray</button>
+            <button class="button button26">Black</button>
+        </div>
+        <h3 style="color: green;">Приклад 6: Тінь кнопок</h3>
+        <div class="styled-div153">
+            <style>
+                .styled-div153 .button {
+                    background-color: #4CAF50;
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    transition-duration: 0.4s;
+                }
+
+                .styled-div153 .button27 {
+                    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                }
+
+
+                .styled-div153 .button28:hover {
+                    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+                }
+            </style>
+            <button class="button button27">button1</button>
+            <button class="button button28">button2</button>
+        </div>
+        <h3 style="color: green;">Приклад 7: Відключені кнопки</h3>
+        <div class="styled-div154">
+            <style>
+                .styled-div154 .button {
+                    background-color: #4CAF50;
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                }
+
+                .styled-div154 .disabled {
+                    opacity: 0.6;
+                    cursor: not-allowed;
+                }
+            </style>
+            <button class="button">button1</button>
+            <button class="button disabled">button2</button>
+        </div>
+        <h3 style="color: green;">Приклад 8: Вертикальна група кнопок</h3>
+        <div class="styled-div155">
+            <style>
+                .styled-div155 .button {
+                    background-color: #0BCD99;
+                    border: 1px solid green;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: 16px;
+                    cursor: pointer;
+                    width: 150px;
+                    display: block;
+                }
+
+                .styled-div155 .btn-group .button:not(:last-child) {
+                    border-bottom: none;
+                }
+
+                .styled-div155 .btn-group .button:hover {
+                    background-color: #3e8e41;
+                }
+            </style>
+            <button class="button">Кнопка</button>
+            <button class="button">Кнопка</button>
+            <button class="button">Кнопка</button>
+            <button class="button">Кнопка</button>
+        </div>
+        <h3 style="color: green;">Приклад 9: Кнопка на зображенні</h3>
+        <div class="styled-div156">
+            <style>
+                .styled-div156 .container {
+                    position: relative;
+                    width: 100%;
+                    max-width: 400px;
+                }
+
+                .styled-div156 .container img {
+                    width: 100%;
+                    height: auto;
+                }
+
+                .styled-div156 .container .btn {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    background-color: #f1f1f1;
+                    color: black;
+                    font-size: 16px;
+                    padding: 16px 30px;
+                    border: none;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    text-align: center;
+                }
+
+                .styled-div156 .container .btn:hover {
+                    background-color: black;
+                    color: white;
+                }
+            </style>
+            <div class="container">
+                <img src="https://w3schoolsua.github.io/images/img_lights.jpg" alt="wow" style="width:100%">
+                <button class="btn">Кнопка</button>
+            </div>
+        </div>
+        <h3 style="color: green;">Приклад 10: Анімовані кнопки</h3>
+        <div class="styled-div157">
+            <style>
+                .styled-div157 .button {
+                    display: inline-block;
+                    border-radius: 4px;
+                    background-color: #f4585e;
+                    border: none;
+                    color: #FFF;
+                    text-align: center;
+                    font-size: 28px;
+                    padding: 20px;
+                    width: 200px;
+                    transition: all 0.5s;
+                    cursor: pointer;
+                    margin: 5px;
+                }
+
+                .styled-div157 .button span {
+                    cursor: pointer;
+                    display: inline-block;
+                    position: relative;
+                    transition: 0.5s;
+                }
+
+                .styled-div157 .button span:after {
+                    content: '\00bb';
+                    position: absolute;
+                    opacity: 0;
+                    top: 0;
+                    right: -20px;
+                    transition: 0.5s;
+                }
+
+                .styled-div157 .button:hover span {
+                    padding-right: 25px;
+                }
+
+                .styled-div157 .button:hover span:after {
+                    opacity: 1;
+                    right: 0;
+                }
+            </style>
+            <button class="button" style="vertical-align:middle"><span>BUTTON</span></button>
+        </div>
+        <div class="styled-div158">
+            <style>
+                .styled-div158 .button {
+                    display: inline-block;
+                    padding: 15px 25px;
+                    font-size: 24px;
+                    cursor: pointer;
+                    text-align: center;
+                    text-decoration: none;
+                    outline: none;
+                    color: #fff;
+                    background-color: #4CAF50;
+                    border: none;
+                    border-radius: 15px;
+                    box-shadow: 0 9px #999;
+                }
+
+                .styled-div158 .button:hover {
+                    background-color: #3e8e41
+                }
+
+                .styled-div158 .button:active {
+                    background-color: #3e8e41;
+                    box-shadow: 0 5px #666;
+                    transform: translateY(4px);
+                }
+            </style>
+            <button class="button">BUTTON</button>
+        </div><br>
+        <div class="styled-div159">
+            <style>
+                .styled-div159 .button {
+                    position: relative;
+                    background-color: #4CAF50;
+                    border: none;
+                    font-size: 28px;
+                    color: #FFF;
+                    padding: 20px;
+                    width: 200px;
+                    text-align: center;
+                    transition-duration: 0.4s;
+                    text-decoration: none;
+                    overflow: hidden;
+                    cursor: pointer;
+                }
+
+                .styled-div159 .button:after {
+                    content: "";
+                    background: #f1f1f1;
+                    display: block;
+                    position: absolute;
+                    padding-top: 300%;
+                    padding-left: 350%;
+                    margin-left: -20px !important;
+                    margin-top: -120%;
+                    opacity: 0;
+                    transition: all 0.8s
+                }
+
+                .styled-div159 .button:active:after {
+                    padding: 0;
+                    margin: 0;
+                    opacity: 1;
+                    transition: 0s
+                }
+            </style>
+            <button class="button">BUTTON</button>
+        </div><br>
+        <h1 style="color:blue "><i>2.5 CSS Пагінація</i></h1>
+        <h3 style="color: green;">Приклад 1</h3>
+        <div class="styled-div160">
+            <style>
+                .center {
+                    text-align: center;
+                }
+
+                .styled-div160 .pagination {
+                    display: inline-block;
+                }
+
+                .styled-div160 .pagination a {
+                    color: black;
+                    float: left;
+                    padding: 8px 16px;
+                    font-size: 22px;
+                    text-decoration: none;
+                    transition: background-color .3s;
+                    border: 1px solid #ddd;
+                    margin: 0 4px;
+                }
+
+                .styled-div160 .pagination a.active {
+                    background-color: #4CAF50;
+                    color: white;
+                    border: 1px solid #4CAF50;
+                }
+
+                .styled-div160 .pagination a:hover:not(.active) {
+                    background-color: #ddd;
+                }
+            </style>
+            <div class="center">
+                <div class="pagination">
+                    <a href="#">«</a>
+                    <a href="#">1</a>
+                    <a href="#" class="active">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">»</a>
+                </div>
+            </div>
+        </div>
+        <div class="styled-div161">
+            <style>
+                .styled-div161 ul.breadcrumb {
+                    padding: 8px 16px;
+                    list-style: none;
+                    background-color: #eee;
+                }
+
+                .styled-div161 ul.breadcrumb li {
+                    display: inline;
+                }
+
+                .styled-div161 ul.breadcrumb li+li:before {
+                    padding: 8px;
+                    color: black;
+                    content: "/\00a0";
+                }
+
+                .styled-div161 ul.breadcrumb li a {
+                    color: green;
+                }
+            </style>
+            <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pictures</a></li>
+                <li><a href="#">Summer 15</a></li>
+                <li>Italy</li>
+            </ul>
+        </div>
+        <h1 style="color:blue "><i>2.6 Створення стовпців CSS</i></h1>
+        <h3 style="color: green;">Приклади 1-6</h3>
+        <div class="styled-div162">
+            <style>
+                .styled-div162 .newspaper {
+                    column-count: 3;
+                    column-gap: 40px;
+                    column-width: 50px;
+                    column-rule-style: solid;
+                    column-rule-width: 1px;
+                    column-rule-color: lightblue;
+                }
+
+                .styled-div162 h2 {
+                    column-span: all;
+                }
+            </style>
+            <div class="newspaper">
+                <h2>Lorem Ipsum Dolor Sit Amet</h2>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor
+                in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+                vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis
+                dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil
+                imperdiet doming id quod mazim placerat facer possim assum.
+            </div>
+        </div>
+        <h1 style="color:blue "><i>2.7 CSS Випадаючі (що розкриваються) списки</i></h1>
+        <h3 style="color: green;">Приклад 1: Основний випадаючий (що розкривається) список</h3>
+        <div class="styled-div163">
+            <style>
+                .styled-div163 .dropdown {
+                    position: relative;
+                    display: inline-block;
+                }
+
+                .styled-div163 .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    padding: 12px 16px;
+                    z-index: 1;
+                }
+
+                .styled-div163 .dropdown:hover .dropdown-content {
+                    display: block;
+                }
+            </style>
+            <p>Move the mouse over the text below to open the dropdown content.</p>
+
+            <div class="dropdown">
+                <span>Mouse over me</span>
+                <div class="dropdown-content">
+                    <p>Hello World!</p>
+                </div>
+            </div>
+        </div>
+        <h3 style="color: green;">Приклад 2: Випадаюче меню</h3>
+        <div class="styled-div164">
+            <style>
+                .styled-div164 .dropbtn {
+                    background-color: #4CAF50;
+                    color: white;
+                    padding: 16px;
+                    font-size: 16px;
+                    border: none;
+                    cursor: pointer;
+                }
+
+                .styled-div164 .dropdown {
+                    position: relative;
+                    display: inline-block;
+                }
+
+                .styled-div164 .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    right: 0;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                }
+
+                .styled-div164 .dropdown-content a {
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                }
+
+                .styled-div164 .dropdown-content a:hover {
+                    background-color: #f1f1f1
+                }
+
+                .styled-div164 .dropdown:hover .dropdown-content {
+                    display: block;
+                }
+
+                .styled-div164 .dropdown:hover .dropbtn {
+                    background-color: #3e8e41;
+                }
+            </style>
+            <p>Move the mouse over the text below to open the dropdown content.</p>
+
+            <div class="dropdown" style="float:left;">
+                <button class="dropbtn">Left</button>
+                <div class="dropdown-content" style="left:0;">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+
+            <div class="dropdown" style="float:right;">
+                <button class="dropbtn">Right</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+        </div><br><br><br>
+        <h3 style="color: green;">Приклад 3</h3>
+        <div class="styled-div165">
+            <style>
+                .styled-div165 .dropdown {
+                    position: relative;
+                    display: inline-block;
+                }
+
+                .styled-div165 .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                }
+
+                .styled-div165 .dropdown:hover .dropdown-content {
+                    display: block;
+                }
+
+                .styled-div165 .desc {
+                    padding: 15px;
+                    text-align: center;
+                }
+            </style>
+            <p>Move the mouse over the text below to open the dropdown content.</p>
+
+            <div class="dropdown">
+                <img src="https://w3schoolsua.github.io/images/img_5terre.jpg" alt="Cinque Terre" width="100"
+                    height="50">
+                <div class="dropdown-content">
+                    <img src="https://w3schoolsua.github.io/images/img_5terre.jpg" alt="Cinque Terre" width="300"
+                        height="200">
+                    <div class="desc">Beautiful Cinque Terre</div>
+                </div>
+            </div>
+        </div>
+        <div class="styled-div166">
+            <style>
+                .styled-div166 ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                    background-color: #333;
+                }
+
+                .styled-div166 li {
+                    float: left;
+                }
+
+                .styled-div166 li a,
+                .dropbtn {
+                    display: inline-block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+
+                .styled-div166 li a:hover,
+                .dropdown:hover .dropbtn {
+                    background-color: red;
+                }
+
+                .styled-div166 li.dropdown {
+                    display: inline-block;
+                }
+
+                .styled-div166 .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                }
+
+                .styled-div166 .dropdown-content a {
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                }
+
+                .styled-div166 .dropdown-content a:hover {
+                    background-color: #f1f1f1;
+                }
+
+                .styled-div166 .dropdown:hover .dropdown-content {
+                    display: block;
+                }
+            </style>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </li>
+            </ul>
+        </div><br>
+        <h1 style="color:blue "><i>2.8 CSS Ключові слова кольору</i></h1>
+        <h3 style="color: green;">Приклад 1:Ключове слово transparent (прозорість)</h3>
+
+        <div class="styled-div167">
+            <style>
+                .styled-div167 .container1 {
+                    background-image: url("https://www.w3schools.com/css/paper.gif");
+                }
+
+                .styled-div167 div.ex1 {
+                    background-color: lightgreen;
+                    border: 2px solid black;
+                    padding: 15px;
+                }
+
+                .styled-div167 div.ex2 {
+                    background-color: transparent;
+                    border: 2px solid black;
+                    padding: 15px;
+                }
+            </style>
+            <div class="container1">
+                <div class="ex1">This div has a light green background.</div>
+                <br>
+                <div class="ex2">This div has a transparent background.</div>
+            </div>
+        </div>
+        <h3 style="color: green;">Приклад 2:Ключове слово currentcolor (поточний колір)</h3>
+
+        <div class="styled-div168">
+            <style>
+                .styled-div168 .container1 {
+                    color: green;
+                }
+
+                .styled-div168 div {
+                    box-shadow: 0px 0px 15px currentcolor;
+                    border: 5px solid currentcolor;
+                    padding: 15px;
+                }
+            </style>
+            <div class="container1">
+                <div>
+                    <p>This div's border color and shadow color is set to the current color value of the body element.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <h3 style="color: green;">Приклад 3:Ключове слово inherit (наслідування)</h3>
+        <div class="styled-div169">
+            <style>
+                .styled-div169 div {
+                    border: 2px solid red;
+                }
+
+                .styled-div169 span {
+                    border: inherit;
+                }
+            </style>
+            <div>Here, the <span>span element's</span> border settings will be inherited from the parent element.</div>
+            <br>
+
+            <div style="border:2px dotted blue;">Here, the <span>span element's</span> border settings will also be
+                inherited from the parent element.</div>
+        </div>
+        <br>
+        <h1 style="color:blue "><i>2.9 CSS Ефекти тіні</i></h1>
+        <h3 style="color: green;">Приклад 1: CSS Тінь тексту</h3>
+        <div class="styled-div170">
+            <style>
+                .styled-div170 h1 {
+                    text-shadow: 2px 2px;
+                }
+
+                .styled-div170 h2 {
+                    text-shadow: 2px 2px red;
+                }
+
+                .styled-div170 h3 {
+                    text-shadow: 2px 2px 5px red;
+                }
+
+                .styled-div170 h4 {
+                    color: white;
+                    text-shadow: 2px 2px 4px #000;
+                }
+
+                .styled-div170 h5 {
+                    text-shadow: 0 0 3px #FF0000;
+                }
+            </style>
+            <h1>Text shadow effect!</h1>
+            <h2>Text shadow effect!</h2>
+            <h3>Text shadow effect!</h3>
+            <h4>Text shadow effect!</h4>
+            <h5>Text shadow effect!</h5>
+        </div>
+        <h3 style="color: green;">Приклад 2: Кілька тіней</h3>
+        <div class="styled-div171">
+            <style>
+                .styled-div171 h1 {
+                    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+                }
+
+                .styled-div171 h2 {
+                    color: white;
+                    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+                }
+
+                .styled-div171 h3 {
+                    color: yellow;
+                    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                }
+            </style>
+            <h1>Text shadow effect!</h1>
+            <h2>Text shadow effect!</h2>
+            <h3>Text shadow effect!</h3>
+        </div>
+        <h1 style="color:blue "><i>2.10 CSS Тінь блоку</i></h1>
+        <h3 style="color: green;">Приклад 1: CSS Тінь блоку</h3>
+        <div class="styled-div172">
+            <style>
+                .styled-div172 div {
+                    width: 300px;
+                    height: 100px;
+                    padding: 15px;
+                    background-color: yellow;
+                    box-shadow: 10px 10px;
+                }
+            </style>
+            <div></div>
+        </div><br>
+        <div class="styled-div173">
+            <style>
+                .styled-div173 div {
+                    width: 300px;
+                    height: 100px;
+                    padding: 15px;
+                    background-color: yellow;
+                    box-shadow: 10px 10px 5px grey;
+                }
+            </style>
+            <div></div>
+        </div>
+        <h3 style="color: green;">Приклад 2: Карточки</h3>
+        <div class="styled-div174">
+            <style>
+                .styled-div174 div.card {
+                    width: 250px;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    text-align: center;
+                }
+
+                .styled-div174 div.header {
+                    background-color: #4CAF50;
+                    color: white;
+                    padding: 10px;
+                    font-size: 40px;
+                }
+
+                .styled-div174 div.container1 {
+                    padding: 10px;
+                }
+
+                .styled-div174 div.polaroid {
+                    width: 250px;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    text-align: center;
+                }
+
+                .styled-div174 div.container2 {
+                    padding: 10px;
+                }
+            </style>
+            <div class="card">
+                <div class="header">
+                    <h1>1</h1>
+                </div>
+
+                <div class="container1">
+                    <p>January 1, 2021</p>
+                </div>
+            </div><br><br>
+            <div class="polaroid">
+                <img src="https://www.w3schools.com/css/rock600x400.jpg" alt="Norway" style="width:100%">
+                <div class="container2">
+                    <p>Hardanger, Norway</p>
+                </div>
+            </div>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Set a "2px" horizontal, and "2px" vertical, text shadow for the <h1> element. -->
+        <div class="styled-div175">
+            <style>
+                .styled-div175 h1 {
+                    text-shadow: 2px 2px;
+                }
+            </style>
+            <h1>This is a heading</h1>
+            <p>This is a paragraph</p>
+            <p>This is a paragraph</p>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Set a "2px" horizontal, and "2px" vertical, "green" text shadow for the <h1> element, with a "5px" blur radius. -->
+        <div class="styled-div176">
+            <style>
+                .styled-div176 h1 {
+                    text-shadow: 2px 2px 5px green;
+                }
+            </style>
+            <h1>This is a heading</h1>
+            <p>This is a paragraph</p>
+            <p>This is a paragraph</p>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Set a "2px" horizontal, and "2px" vertical, "green" text shadow for the <h1> element, with a "5px" blur radius. -->
+        <div class="styled-div177">
+            <style>
+                .styled-div177 h1 {
+                    text-shadow: 2px 2px 5px green, 3px 3px 10px red;
+                }
+            </style>
+            <h1>This is a heading</h1>
+            <p>This is a paragraph</p>
+            <p>This is a paragraph</p>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Set a "10px" horizontal, and "10px" vertical, box shadow for the <div> element. -->
+        <div class="styled-div178">
+            <style>
+                .styled-div178 div {
+                    box-shadow: 10px 10px;
+                }
+            </style>
+            <div>
+                <h1>This is a heading</h1>
+                <p>This is a paragraph</p>
+                <p>This is a paragraph</p>
+            </div>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Set a "10px" horizontal, and "10px" vertical, "red" box shadow for the <div> element.-->
+        <div class="styled-div179">
+            <style>
+                .styled-div179 div {
+                    box-shadow: 10px 10px red;
+                }
+            </style>
+            <div>
+                <h1>This is a heading</h1>
+                <p>This is a paragraph</p>
+                <p>This is a paragraph</p>
+            </div>
+        </div><br>
+        <h1 style="color:blue "><i>2.11 CSS Переходи</i></h1>
+        <h3 style="color: green;">Приклад 1: CSS Переходи</h3>
+        <div class="styled-div180">
+            <style>
+                .styled-div180 div {
+                    width: 100px;
+                    height: 100px;
+                    background: red;
+                    transition: width 2s, height 4s;
+                }
+
+                .styled-div180 div:hover {
+                    width: 300px;
+                    height: 300px;
+                }
+            </style>
+            <div>
+            </div>
+        </div>
+        <h3 style="color: green;">Приклад 2: Вкажіть криву швидкості переходу</h3>
+        <div class="styled-div181">
+            <style>
+                .styled-div181 div {
+                    width: 100px;
+                    height: 100px;
+                    background: red;
+                    transition: width 2s;
+                }
+
+                .styled-div181 #div1 {
+                    transition-timing-function: linear;
+                }
+
+                .styled-div181 #div2 {
+                    transition-timing-function: ease;
+                }
+
+                .styled-div181 #div3 {
+                    transition-timing-function: ease-in;
+                }
+
+                .styled-div181 #div4 {
+                    transition-timing-function: ease-out;
+                }
+
+                .styled-div181 #div5 {
+                    transition-timing-function: ease-in-out;
+                }
+
+                .styled-div181 div:hover {
+                    width: 300px;
+                }
+            </style>
+            <div id="div1">linear</div><br>
+            <div id="div2">ease</div><br>
+            <div id="div3">ease-in</div><br>
+            <div id="div4">ease-out</div><br>
+            <div id="div5">ease-in-out</div><br>
+        </div><br>
+        <div class="styled-div182">
+            <style>
+                .styled-div182 div {
+                    width: 100px;
+                    height: 100px;
+                    background: red;
+                    transition: width 3s;
+                    transition-delay: 1s;
+                }
+
+                .styled-div182 div:hover {
+                    width: 300px;
+                }
+            </style>
+            <div>
+            </div>
+        </div>
+        <h3 style="color: green;">Приклад 3: Transition + Transformation (Перехід + Трансформація)</h3>
+        <div class="styled-div183">
+            <style>
+                .styled-div183 div {
+                    width: 100px;
+                    height: 100px;
+                    background: red;
+                    transition: width 2s, height 2s, transform 2s;
+                }
+
+                .styled-div183 div:hover {
+                    width: 300px;
+                    height: 300px;
+                    transform: rotate(180deg);
+                }
+            </style>
+            <div>
+            </div>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Add a 2 second transition effect for width changes of the <div> element. -->
+        <div class="styled-div184">
+            <style>
+                .styled-div184 div {
+                    width: 100px;
+                    height: 100px;
+                    background: red;
+                    transition: width 2s;
+                }
+
+                .styled-div184 div:hover {
+                    width: 300px;
+                }
+            </style>
+            <div>
+                <div>This is a div</div>
+            </div>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Specify that the transition of the <div> element should have a "ease-in-out" speed curve. -->
+        <div class="styled-div185">
+            <style>
+                .styled-div185 div {
+                    width: 100px;
+                    height: 100px;
+                    background: red;
+                    transition: width 2s;
+                    transition-timing-function: ease-in-out;
+                }
+
+                .styled-div185 div:hover {
+                    width: 300px;
+                }
+            </style>
+            <div>
+                <div>This is a div</div>
+            </div>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Specify that the transition of the <div> element should have a "0.5" second delay before starting. -->
+        <div class="styled-div186">
+            <style>
+                .styled-div186 div {
+                    width: 100px;
+                    height: 100px;
+                    background: red;
+                    transition: width 2s;
+                    transition-delay: 0.5s;
+                }
+
+                .styled-div186 div:hover {
+                    width: 300px;
+                }
+            </style>
+            <div>
+                <div>This is a div</div>
+            </div>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Add a 2 second transition effect for background, and transform changes of the <div> element. -->
+        <div class="styled-div187">
+            <style>
+                .styled-div187 div {
+                    width: 100px;
+                    height: 100px;
+                    background: red;
+                    transition: background 2s, transform 2s;
+                }
+
+                .styled-div187 div:hover {
+                    background: blue;
+                    transform: rotate(180deg);
+                }
+            </style>
+            <div>
+                <div>This is a div</div>
+            </div>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Add a 2 second transition effect for background, and transform changes of the <div> element. -->
+        <div class="styled-div188">
+            <style>
+                .styled-div188 div {
+                    width: 100px;
+                    height: 100px;
+                    background: red;
+                    transition: width 2s ease-in-out 0.5s;
+                }
+
+                .styled-div188 div:hover {
+                    width: 400px;
+                }
+            </style>
+            <div>
+                <div>This is a div</div>
+            </div>
+        </div>
+        <br>
+        <h1 style="color:blue "><i>2.12 CSS Ефекти тексту</i></h1>
+        <h3 style="color: green;">Приклад 1: CSS text-overflow - Переповнення</h3>
+        <div class="styled-div189">
+            <style>
+                .styled-div189 p.test01 {
+                    white-space: nowrap;
+                    width: 200px;
+                    border: 1px solid #000000;
+                    overflow: hidden;
+                    text-overflow: clip;
+                }
+
+                .styled-div189 p.test02 {
+                    white-space: nowrap;
+                    width: 200px;
+                    border: 1px solid #000000;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            </style>
+            <p class="test01">This is some long text that will not fit in the box</p>
+            <p class="test02">This is some long text that will not fit in the box</p>
+        </div>
+        <h3 style="color: green;">Приклад 2: CSS word-wrap - Перенесення слів</h3>
+        <div class="styled-div190">
+            <style>
+                .styled-div190 p.test001 {
+                    width: 11em;
+                    border: 1px solid #000000;
+                    word-wrap: break-word;
+                }
+            </style>
+            <p class="test001">This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The
+                long
+                word will break and wrap to the next line.</p>
+        </div>
+        <h3 style="color: green;">Приклад 3: CSS word-break - Обривання слів</h3>
+        <div class="styled-div191">
+            <style>
+                .styled-div191 p.test0001 {
+                    width: 140px;
+                    border: 1px solid #000000;
+                    word-break: keep-all;
+                }
+
+                .styled-div191 p.test0002 {
+                    width: 140px;
+                    border: 1px solid #000000;
+                    word-break: break-all;
+                }
+            </style>
+            <p class="test0001">This paragraph contains some text. This line will-break-at-hyphens.</p>
+
+            <p class="test0002">This paragraph contains some text. The lines will break at any character.</p>
+        </div>
+        <h3 style="color: green;">Приклад 4: CSS writing-mode - Режим запису</h3>
+        <div class="styled-div192">
+            <style>
+                .styled-div192 p.test00001 {
+                    writing-mode: horizontal-tb;
+                }
+
+                .styled-div192 span.test00002 {
+                    writing-mode: vertical-rl;
+                }
+
+                .styled-div192 p.test00002 {
+                    writing-mode: vertical-rl;
+                }
+            </style>
+
+            <p class="test00001">Some text with default writing-mode.</p>
+
+            <p>Some text with a span element with a <span class="test00002">vertical-rl</span> writing-mode.</p>
+
+            <p class="test00002">Some text with writing-mode: vertical-rl.</p>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Specify that the overflowed content for the <p> element should be signaled with an ellipsis (...).-->
+        <div class="styled-div193">
+            <style>
+                .styled-div193 p {
+                    white-space: nowrap;
+                    width: 200px;
+                    border: 1px solid #000000;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            </style>
+            <div>
+                <p>
+                    This paragraph contains a very long word: supercalifragilisticexpialidocious.
+                </p>
+            </div>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Specify that text in the <p> element should wrap, even if it needs to split in the middle of a word.-->
+        <div class="styled-div194">
+            <style>
+                .styled-div194 p {
+                    width: 150px;
+                    border: 1px solid #000000;
+                    word-wrap: break-word;
+                }
+            </style>
+            <div>
+                <p>
+                    This paragraph contains a very long word: supercalifragilisticexpialidocious.
+                </p>
+            </div>
+        </div>
+        <h3 style="color: purple;">Вправа</h3>
+        <!-- Specify that text in the <p> element can break between any two letters.-->
+        <div class="styled-div195">
+            <style>
+                .styled-div195 p {
+                    width: 150px;
+                    border: 1px solid #000000;
+                    word-break: break-all;
+                }
+            </style>
+            <div>
+                <p>
+                    This paragraph contains a very long word: supercalifragilisticexpialidocious.
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
